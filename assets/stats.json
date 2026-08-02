@@ -4,13 +4,13 @@
   "name": "Eric Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 2617,
-    "commits_last_year": 1818,
+    "commits_all_time": 2624,
+    "commits_last_year": 1825,
     "repos": 94,
     "repos_private": 71
   },
   "calendar": {
-    "total": 1948,
+    "total": 1955,
     "active_days": 145,
     "peak": 69
   },
@@ -65,7 +65,7 @@
     },
     {
       "month": "2026-08",
-      "count": 48
+      "count": 55
     }
   ],
   "rhythm": {
@@ -81,7 +81,7 @@
     "weekdays": [
       {
         "day": "Sun",
-        "count": 149
+        "count": 156
       },
       {
         "day": "Mon",
@@ -114,7 +114,7 @@
     "merged": 54,
     "issues": 14,
     "reviews": 0,
-    "commits": 2617,
+    "commits": 2624,
     "repos": 94
   },
   "owners": [
@@ -124,15 +124,19 @@
       "repos": 33,
       "private": 31,
       "all_time": 941,
-      "window": 926
+      "window": 926,
+      "hours": 1412,
+      "hours_last_year": 1389
     },
     {
       "login": "VNE-MedTech",
       "name": "VNE Medical Technologies",
       "repos": 22,
       "private": 19,
-      "all_time": 833,
-      "window": 833
+      "all_time": 840,
+      "window": 840,
+      "hours": 1260,
+      "hours_last_year": 1260
     },
     {
       "login": "Claw-For-Humanity",
@@ -140,7 +144,9 @@
       "repos": 21,
       "private": 13,
       "all_time": 467,
-      "window": 0
+      "window": 0,
+      "hours": 700,
+      "hours_last_year": 0
     },
     {
       "login": "Garibaldi-Robotics",
@@ -148,7 +154,9 @@
       "repos": 2,
       "private": 2,
       "all_time": 291,
-      "window": 0
+      "window": 0,
+      "hours": 436,
+      "hours_last_year": 0
     },
     {
       "login": "erickdhdock",
@@ -156,7 +164,9 @@
       "repos": 15,
       "private": 5,
       "all_time": 56,
-      "window": 30
+      "window": 30,
+      "hours": 84,
+      "hours_last_year": 45
     },
     {
       "login": "AMUSELY",
@@ -164,24 +174,26 @@
       "repos": 1,
       "private": 1,
       "all_time": 29,
-      "window": 29
+      "window": 29,
+      "hours": 44,
+      "hours_last_year": 44
     }
   ],
   "languages": [
     {
       "name": "Python",
       "commits": 1094,
-      "pct": 42.8
+      "pct": 42.7
     },
     {
       "name": "JavaScript",
       "commits": 698,
-      "pct": 27.3
+      "pct": 27.2
     },
     {
       "name": "Java",
       "commits": 291,
-      "pct": 11.4
+      "pct": 11.3
     },
     {
       "name": "TypeScript",
@@ -195,8 +207,8 @@
     },
     {
       "name": "Other",
-      "commits": 163,
-      "pct": 6.4
+      "commits": 170,
+      "pct": 6.6
     }
   ],
   "public_repos_by_commits": [

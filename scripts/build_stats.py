@@ -321,6 +321,11 @@ def aggregate(bundle):
         o["all_time"] += r["all_time"]
         o["window"] += r["window"]
     owners = sorted(owners.values(), key=lambda o: -o["all_time"])
+    # Estimated, not measured. GitHub records no time, so this is the commit
+    # count at a flat rate and is labelled as such wherever it is shown.
+    for o in owners:
+        o["hours"] = round(o["all_time"] * HOURS_PER_COMMIT)
+        o["hours_last_year"] = round(o["window"] * HOURS_PER_COMMIT)
 
     langs = {}
     for r in rows:
@@ -387,10 +392,14 @@ DARK = {
 # attribute, and "Segoe UI" with double quotes terminates it early.
 FONT = "system-ui,-apple-system,'Segoe UI',Roboto,sans-serif"
 W = 880
-BAR_X = 164          # bar baseline
-BAR_MAX = 156
-VAL_X = 372          # all-time value, right-aligned
-REC_X = 468          # "N recent", right-aligned; keeps clear of STACK_X
+BAR_X = 148          # bar baseline
+BAR_MAX = 140
+VAL_X = 340          # hours, right-aligned
+REC_X = 470          # commit detail, right-aligned; keeps clear of STACK_X
+
+# GitHub records no time at all, so hours are commits at a flat assumed rate.
+# Stated on the panel so the figure is never read as measured.
+HOURS_PER_COMMIT = 1.5
 ROW_H = 30
 ORG_TOP = 236
 STACK_X = 512
@@ -504,9 +513,9 @@ def render(d, p):
 
     # ---- section headings
     a(f'<text x="28" y="180" font-size="13" font-weight="600" fill="{p["ink2"]}">'
-      f'Where the commits go</text>')
+      f'Where the time goes</text>')
     a(f'<text x="28" y="198" font-size="11" fill="{p["muted"]}">'
-      f'authored commits per account, all-time</text>')
+      f'all-time, estimated at {HOURS_PER_COMMIT} h per commit</text>')
     a(f'<text x="{STACK_X}" y="180" font-size="13" font-weight="600" '
       f'fill="{p["ink2"]}">Language mix</text>')
     a(f'<text x="{STACK_X}" y="198" font-size="11" fill="{p["muted"]}">'
@@ -544,12 +553,16 @@ def render(d, p):
           f'keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>')
         a(f'<text x="{VAL_X}" y="{y + 4}" font-size="12" text-anchor="end" '
           f'font-weight="600" fill="{p["ink"]}" '
-          f'style="font-variant-numeric:tabular-nums">{n(o["all_time"])}</text>')
-        # Dormant accounts read as "—" rather than a missing cell, so the
-        # difference between "no recent work" and "no data" is explicit.
-        recent = f'{n(o["window"])} recent' if o["window"] else "dormant"
+          f'style="font-variant-numeric:tabular-nums">'
+          f'{n(round(o["all_time"] * HOURS_PER_COMMIT))} h</text>')
+        # Commits stay visible as the measured quantity behind the estimate.
+        # An account with nothing in the last year says so, since a large
+        # all-time figure otherwise reads as current work.
+        detail = f'{n(o["all_time"])} commits'
+        if not o["window"]:
+            detail += ", dormant"
         a(f'<text x="{REC_X}" y="{y + 4}" font-size="11" text-anchor="end" '
-          f'fill="{p["muted"]}">{recent}</text>')
+          f'fill="{p["muted"]}">{detail}</text>')
 
     # ---- language stack: part-to-whole, categorical, 2px surface gaps.
     sy = 232
