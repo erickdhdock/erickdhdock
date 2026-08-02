@@ -81,4 +81,20 @@ jobs:
           # Nothing to do when the numbers haven't moved.
           git diff --staged --quiet && echo "no changes" && exit 0
           git commit -m "chore: refresh profile stats"
-          git push
+
+          # Two runs overlapping (a manual dispatch landing on the cron, or
+          # several dispatches in a row) both push regenerated artifacts and
+          # the loser gets "fetch first". Everything here is generated, so on
+          # conflict this run's freshly built files win: -X theirs keeps the
+          # commit being replayed.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "push rejected — rebasing onto origin/main (attempt $attempt)"
+            git pull --rebase -X theirs origin main \
+              || { git rebase --abort || true; exit 1; }
+          done
+          echo "::error::could not push after 3 attempts"
+          exit 1

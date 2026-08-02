@@ -349,10 +349,10 @@ LEG_H = 22
 
 # Section 3: monthly rhythm (left) and the activity radar (right).
 MON_X = 28           # first column
-MON_W = 26           # column width
-MON_GAP = 10
-MON_BASE_OFF = 108   # baseline below the section title
-MON_MAX = 84         # tallest column
+MON_W = 28           # column width
+MON_GAP = 9
+MON_BASE_OFF = 120   # baseline below the section title
+MON_MAX = 80         # tallest column; leaves headroom for the value labels
 RAD_CX = 682
 RAD_R = 70
 # Log rings, because commits (thousands) and issues (tens) share one plot.
@@ -364,11 +364,17 @@ RAD_AXES = [("Commits", "commits"), ("Pull requests", "prs"),
             ("Merged", "merged"), ("Repos", "repos"), ("Issues", "issues")]
 
 
-MONTHS = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
+MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+          "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
 def esc(s):
     return (str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+
+
+def month_label(ym, with_year=False):
+    name = MONTHS[int(ym[5:7]) - 1]
+    return f"{name} {ym[:4]}" if with_year else name
 
 
 def radar_pt(cx, cy, i, frac):
@@ -540,16 +546,18 @@ def render(d, p):
     # ---- section 3 headings
     a(f'<text x="28" y="{sec3_top}" font-size="13" font-weight="600" '
       f'fill="{p["ink2"]}">Contribution rhythm</text>')
+    span = months[-12:]
     a(f'<text x="28" y="{sec3_top + 18}" font-size="11" fill="{p["muted"]}">'
-      f'contributions per month, private included</text>')
+      f'contributions per month · {month_label(span[0]["month"], True)} – '
+      f'{month_label(span[-1]["month"], True)} · private included</text>')
     a(f'<text x="{STACK_X}" y="{sec3_top}" font-size="13" font-weight="600" '
       f'fill="{p["ink2"]}">Activity shape</text>')
     a(f'<text x="{STACK_X}" y="{sec3_top + 18}" font-size="11" '
       f'fill="{p["muted"]}">all-time totals, log scale</text>')
 
     # ---- monthly columns: one hue, since length already carries magnitude
-    peak = max((m["count"] for m in months), default=1) or 1
-    for i, m in enumerate(months[-12:]):
+    peak = max((m["count"] for m in span), default=1) or 1
+    for i, m in enumerate(span):
         x = MON_X + i * (MON_W + MON_GAP)
         ht = max(2.0, MON_MAX * m["count"] / peak)
         a(f'<rect x="{x}" y="{mon_base - ht:.1f}" width="{MON_W}" '
@@ -557,11 +565,14 @@ def render(d, p):
           f'<animate attributeName="height" values="2;{ht:.1f}" dur="0.8s" '
           f'begin="{0.05 * i:.2f}s" fill="freeze" calcMode="spline" '
           f'keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>')
-        # Label the peak month only — a number on every column is noise.
-        if m["count"] == peak:
-            a(f'<text x="{x + MON_W / 2:.0f}" y="{mon_base - ht - 6:.1f}" '
-              f'font-size="10.5" text-anchor="middle" font-weight="600" '
-              f'fill="{p["ink"]}">{n(m["count"])}</text>')
+        # Every month carries its count. Nothing here is sensitive, and the
+        # peak alone left the rest of the year unreadable.
+        top = m["count"] == peak
+        a(f'<text x="{x + MON_W / 2:.0f}" y="{mon_base - ht - 5:.1f}" '
+          f'font-size="9.5" text-anchor="middle" '
+          f'font-weight="{600 if top else 400}" '
+          f'fill="{p["ink"] if top else p["muted"]}" '
+          f'style="font-variant-numeric:tabular-nums">{n(m["count"])}</text>')
         a(f'<text x="{x + MON_W / 2:.0f}" y="{mon_base + 14}" font-size="9.5" '
           f'text-anchor="middle" fill="{p["muted"]}">'
           f'{MONTHS[int(m["month"][5:7]) - 1]}</text>')
