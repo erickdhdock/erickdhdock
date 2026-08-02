@@ -70,7 +70,7 @@ def streak_block(r):
     g.append(text(0, 62, r["current_streak"], 64, "fill-strong", weight=700))
     g.append(text(0, 88, "DAY STREAK", 14, "fill-fg", weight=600))
     same = r["current_streak"] == r["longest_streak"]
-    tail = " — longest of the year" if same else ""
+    tail = ", longest of the year" if same else ""
     g.append(text(0, 108,
                   f"unbroken since {pretty_date(r['current_streak_start'])}"
                   f"{tail}", 11.5, "fill-weak"))

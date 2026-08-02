@@ -599,7 +599,7 @@ def render(d, p):
       f'fill="{p["ink2"]}">Contribution rhythm</text>')
     span = months[-12:]
     a(f'<text x="28" y="{sec3_top + 18}" font-size="11" fill="{p["muted"]}">'
-      f'contributions per month · {month_label(span[0]["month"], True)} – '
+      f'contributions per month · {month_label(span[0]["month"], True)} to '
       f'{month_label(span[-1]["month"], True)} · private included</text>')
     a(f'<text x="{STACK_X}" y="{sec3_top}" font-size="13" font-weight="600" '
       f'fill="{p["ink2"]}">Activity shape</text>')
