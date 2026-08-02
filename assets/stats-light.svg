@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="684" viewBox="0 0 880 684" role="img" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif">
 <title>Commit analytics for Eric Kang</title>
-<desc>2,624 commits authored all-time, 1,825 in the last 12 months, across 94 repositories (71 private) in 6 accounts. Top language Python at 42.7 percent.</desc>
+<desc>2,625 commits authored all-time, 1,826 in the last 12 months, across 94 repositories (71 private) in 6 accounts. Top language Python at 42.7 percent.</desc>
 <rect width="880" height="684" rx="8" fill="#ffffff"/>
 <text x="28" y="40" font-size="17" font-weight="600" fill="#0b0b0b">Commit analytics</text>
 <text x="852" y="40" font-size="11.5" text-anchor="end" fill="#898781">updated 2026-08-02</text>
 <line x1="28" y1="58" x2="852" y2="58" stroke="#e1e0d9"/>
-<text x="28" y="108" font-size="31" font-weight="650" fill="#0b0b0b">2,624</text>
+<text x="28" y="108" font-size="31" font-weight="650" fill="#0b0b0b">2,625</text>
 <text x="28" y="128" font-size="11" fill="#898781">commits authored</text>
-<text x="193" y="108" font-size="31" font-weight="650" fill="#0b0b0b">1,825</text>
+<text x="193" y="108" font-size="31" font-weight="650" fill="#0b0b0b">1,826</text>
 <text x="193" y="128" font-size="11" fill="#898781">in the last 12 months</text>
 <text x="358" y="108" font-size="31" font-weight="650" fill="#0b0b0b">108</text>
 <text x="358" y="128" font-size="11" fill="#898781">pull requests opened</text>
@@ -43,9 +43,9 @@
 <text x="470" y="330" font-size="11" text-anchor="end" fill="#898781">291 commits, dormant</text>
 <text x="28" y="360" font-size="12" fill="#52514e">Personal</text>
 <rect x="148" y="350" width="140" height="12" rx="4" fill="#eceef1"/>
-<g clip-path="url(#bars)"><rect x="144" y="350" width="12.3" height="12" rx="4" fill="#2a78d6"><animate attributeName="width" values="4;12.3" dur="0.9s" begin="0.32s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
-<text x="340" y="360" font-size="12" text-anchor="end" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">84 h</text>
-<text x="470" y="360" font-size="11" text-anchor="end" fill="#898781">56 commits</text>
+<g clip-path="url(#bars)"><rect x="144" y="350" width="12.5" height="12" rx="4" fill="#2a78d6"><animate attributeName="width" values="4;12.5" dur="0.9s" begin="0.32s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<text x="340" y="360" font-size="12" text-anchor="end" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">86 h</text>
+<text x="470" y="360" font-size="11" text-anchor="end" fill="#898781">57 commits</text>
 <text x="28" y="390" font-size="12" fill="#52514e">Amusely Music</text>
 <rect x="148" y="380" width="140" height="12" rx="4" fill="#eceef1"/>
 <g clip-path="url(#bars)"><rect x="144" y="380" width="8.3" height="12" rx="4" fill="#2a78d6"><animate attributeName="width" values="4;8.3" dur="0.9s" begin="0.40s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
@@ -63,7 +63,7 @@
 </g></g>
 <rect x="512" y="271" width="10" height="10" rx="2.5" fill="#2a78d6"/>
 <text x="530" y="280" font-size="11.5" fill="#52514e">Python</text>
-<text x="800" y="280" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">1,094</text>
+<text x="800" y="280" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">1,095</text>
 <text x="852" y="280" font-size="11.5" text-anchor="end" fill="#52514e" font-weight="600" style="font-variant-numeric:tabular-nums">42.7%</text>
 <rect x="512" y="293" width="10" height="10" rx="2.5" fill="#eb6834"/>
 <text x="530" y="302" font-size="11.5" fill="#52514e">JavaScript</text>
@@ -123,8 +123,8 @@
 <rect x="398" y="488.0" width="28" height="80.0" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;80.0" dur="0.8s" begin="0.50s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
 <text x="412" y="483.0" font-size="9.5" text-anchor="middle" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">645</text>
 <text x="412" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Jul</text>
-<rect x="435" y="561.2" width="28" height="6.8" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;6.8" dur="0.8s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="449" y="556.2" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">55</text>
+<rect x="435" y="561.1" width="28" height="6.9" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;6.9" dur="0.8s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="449" y="556.1" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">56</text>
 <text x="449" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Aug</text>
 <line x1="28" y1="568" x2="463" y2="568" stroke="#e1e0d9"/>
 <polygon points="682.0,505.8 699.3,518.4 692.7,538.7 671.3,538.7 664.7,518.4" fill="none" stroke="#e1e0d9" stroke-dasharray="2 3"/>
@@ -138,7 +138,7 @@
 <line x1="682" y1="524" x2="615.4" y2="502.4" stroke="#e1e0d9"/>
 <polygon points="682.0,464.2 715.9,513.0 699.9,548.6 661.7,552.0 662.4,517.6" fill="#2a78d6" fill-opacity="0.22" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round"/>
 <text x="682" y="430" font-size="10.5" text-anchor="middle" fill="#898781">Commits</text>
-<text x="682" y="443" font-size="12" text-anchor="middle" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">2,624</text>
+<text x="682" y="443" font-size="12" text-anchor="middle" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">2,625</text>
 <text x="768" y="496" font-size="10.5" text-anchor="start" fill="#898781">Pull requests</text>
 <text x="768" y="509" font-size="12" text-anchor="start" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">108</text>
 <text x="735" y="607" font-size="10.5" text-anchor="start" fill="#898781">Merged</text>
@@ -148,6 +148,6 @@
 <text x="596" y="496" font-size="10.5" text-anchor="end" fill="#898781">Issues</text>
 <text x="596" y="509" font-size="12" text-anchor="end" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">14</text>
 <line x1="28" y1="640" x2="852" y2="640" stroke="#e1e0d9"/>
-<text x="28" y="666" font-size="11.5" fill="#898781">1,955 contributions in the last year · 145 active days · peak 69 in a day</text>
+<text x="28" y="666" font-size="11.5" fill="#898781">1,956 contributions in the last year · 145 active days · peak 69 in a day</text>
 <text x="852" y="666" font-size="11.5" text-anchor="end" fill="#898781">private repos aggregated by account</text>
 </svg>
