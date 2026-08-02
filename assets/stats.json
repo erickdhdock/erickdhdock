@@ -4,13 +4,13 @@
   "name": "Eric Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 2612,
-    "commits_last_year": 1813,
+    "commits_all_time": 2613,
+    "commits_last_year": 1814,
     "repos": 94,
     "repos_private": 71
   },
   "calendar": {
-    "total": 1943,
+    "total": 1944,
     "active_days": 145,
     "peak": 69
   },
@@ -65,7 +65,7 @@
     },
     {
       "month": "2026-08",
-      "count": 43
+      "count": 44
     }
   ],
   "activity": {
@@ -73,7 +73,7 @@
     "merged": 54,
     "issues": 14,
     "reviews": 0,
-    "commits": 2612,
+    "commits": 2613,
     "repos": 94
   },
   "owners": [
@@ -114,8 +114,8 @@
       "name": "Personal",
       "repos": 15,
       "private": 5,
-      "all_time": 53,
-      "window": 27
+      "all_time": 54,
+      "window": 28
     },
     {
       "login": "AMUSELY",
@@ -129,7 +129,7 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 1090,
+      "commits": 1091,
       "pct": 42.7
     },
     {
