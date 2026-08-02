@@ -4,13 +4,13 @@
   "name": "Eric Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 2608,
-    "commits_last_year": 1809,
-    "repos": 93,
-    "repos_private": 70
+    "commits_all_time": 2612,
+    "commits_last_year": 1813,
+    "repos": 94,
+    "repos_private": 71
   },
   "calendar": {
-    "total": 1939,
+    "total": 1943,
     "active_days": 145,
     "peak": 69
   },
@@ -65,7 +65,7 @@
     },
     {
       "month": "2026-08",
-      "count": 39
+      "count": 43
     }
   ],
   "activity": {
@@ -73,8 +73,8 @@
     "merged": 54,
     "issues": 14,
     "reviews": 0,
-    "commits": 2608,
-    "repos": 93
+    "commits": 2612,
+    "repos": 94
   },
   "owners": [
     {
@@ -88,10 +88,10 @@
     {
       "login": "VNE-MedTech",
       "name": "VNE Medical Technologies",
-      "repos": 21,
-      "private": 18,
-      "all_time": 830,
-      "window": 830
+      "repos": 22,
+      "private": 19,
+      "all_time": 833,
+      "window": 833
     },
     {
       "login": "Claw-For-Humanity",
@@ -114,8 +114,8 @@
       "name": "Personal",
       "repos": 15,
       "private": 5,
-      "all_time": 52,
-      "window": 26
+      "all_time": 53,
+      "window": 27
     },
     {
       "login": "AMUSELY",
@@ -129,7 +129,7 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 1089,
+      "commits": 1090,
       "pct": 42.7
     },
     {
@@ -154,8 +154,8 @@
     },
     {
       "name": "Other",
-      "commits": 160,
-      "pct": 6.3
+      "commits": 163,
+      "pct": 6.4
     }
   ],
   "public_repos_by_commits": [
