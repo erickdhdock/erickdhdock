@@ -397,9 +397,15 @@ def render(d, p):
           f'fill="{p["track"]}"/>')
         # Drawn 4px left of the baseline and clipped, so the data end is
         # rounded while the baseline end stays square.
+        #
+        # The base width is the FINAL value, not the animation's start value.
+        # GitHub serves these under `Content-Security-Policy: ...; sandbox`,
+        # which renders SVG statically — SMIL never runs. Anything whose
+        # geometry depends on the animation having played renders as an empty
+        # track there. Animation is enhancement; the static state must be right.
         a(f'<g clip-path="url(#bars)">'
-          f'<rect x="{BAR_X - 4}" y="{y - 6}" width="4" height="12" rx="4" '
-          f'fill="{p["accent"]}">'
+          f'<rect x="{BAR_X - 4}" y="{y - 6}" width="{w + 4:.1f}" height="12" '
+          f'rx="4" fill="{p["accent"]}">'
           f'<animate attributeName="width" values="4;{w + 4:.1f}" dur="0.9s" '
           f'begin="{0.08 * i:.2f}s" fill="freeze" calcMode="spline" '
           f'keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>')
@@ -416,7 +422,10 @@ def render(d, p):
     sy = 232
     a(f'<clipPath id="stack"><rect x="{STACK_X}" y="{sy}" width="{STACK_W}" '
       f'height="22" rx="4"/></clipPath>')
-    a(f'<clipPath id="reveal"><rect x="{STACK_X}" y="{sy}" width="0" height="22">'
+    # Base width is the full stack, same reason as the bars: with SMIL inert
+    # a zero-width reveal clip would hide the whole chart.
+    a(f'<clipPath id="reveal"><rect x="{STACK_X}" y="{sy}" width="{STACK_W}" '
+      f'height="22">'
       f'<animate attributeName="width" values="0;{STACK_W}" dur="1.0s" '
       f'begin="0.1s" fill="freeze" calcMode="spline" keyTimes="0;1" '
       f'keySplines="0.22 0.9 0.3 1"/></rect></clipPath>')
@@ -464,6 +473,37 @@ def render(d, p):
 
 # ---------------------------------------------------------------- main
 
+SVG_NS = "{http://www.w3.org/2000/svg}"
+
+
+def check_static_state(svg):
+    """Every animated attribute must already hold its FINAL value statically.
+
+    GitHub serves README SVGs with a `sandbox` CSP, so SMIL never runs there.
+    An element whose base attribute is the animation's *start* value renders as
+    an empty bar — which is exactly how the first version of this panel shipped.
+    """
+    root = ElementTree.fromstring(svg)
+    bad = []
+    for parent in root.iter():
+        for ch in parent:
+            if ch.tag != SVG_NS + "animate":
+                continue
+            attr = ch.get("attributeName")
+            values = (ch.get("values") or "").split(";")
+            if not attr or len(values) < 2:
+                continue
+            final, base = values[-1], parent.get(attr)
+            try:
+                if base is None or abs(float(base) - float(final)) > 0.05:
+                    bad.append(f"{parent.tag.split('}')[-1]}.{attr}: "
+                               f"base={base} final={final}")
+            except ValueError:
+                if base != final:
+                    bad.append(f"{parent.tag.split('}')[-1]}.{attr}")
+    return bad
+
+
 def guard_regression(data):
     """Refuse to overwrite full numbers with a degraded public-only snapshot.
 
@@ -500,6 +540,10 @@ def main():
             ElementTree.fromstring(svg)
         except ElementTree.ParseError as e:
             sys.exit(f"generated {name} SVG is not well-formed XML: {e}")
+        stale = check_static_state(svg)
+        if stale:
+            sys.exit(f"{name} SVG depends on SMIL for its geometry, which "
+                     f"GitHub's sandbox CSP disables:\n  " + "\n  ".join(stale))
         with open(os.path.join(ASSETS, f"stats-{name}.svg"), "w") as f:
             f.write(svg)
 

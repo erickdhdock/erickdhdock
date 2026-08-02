@@ -40,7 +40,7 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/settings/3d-contrib.json
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 

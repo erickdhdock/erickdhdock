@@ -4,13 +4,13 @@
   "name": "Eric Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 2606,
-    "commits_last_year": 1807,
-    "repos": 92,
+    "commits_all_time": 2607,
+    "commits_last_year": 1808,
+    "repos": 93,
     "repos_private": 70
   },
   "calendar": {
-    "total": 1936,
+    "total": 1938,
     "active_days": 145,
     "peak": 69
   },
@@ -50,10 +50,10 @@
     {
       "login": "erickdhdock",
       "name": "Personal",
-      "repos": 14,
+      "repos": 15,
       "private": 5,
-      "all_time": 50,
-      "window": 24
+      "all_time": 51,
+      "window": 25
     },
     {
       "login": "AMUSELY",
@@ -67,7 +67,7 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 1087,
+      "commits": 1088,
       "pct": 42.7
     },
     {
