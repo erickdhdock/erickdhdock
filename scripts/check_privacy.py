@@ -18,7 +18,10 @@ import sys
 
 LOGIN = os.environ.get("PROFILE_LOGIN", "erickdhdock")
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
-ASSETS = os.path.join(ROOT, "assets")
+# The 3D chart is scanned too: decorate_3d_chart.py writes generated content
+# into it, so it is no longer just upstream output.
+SCANNED = [os.path.join(ROOT, "assets"),
+           os.path.join(ROOT, "profile-3d-contrib")]
 NAME_CHAR = r"[A-Za-z0-9._-]"
 
 QUERY = """
@@ -83,10 +86,14 @@ def main():
         return 0
 
     blob = []
-    for fn in sorted(os.listdir(ASSETS)):
-        if fn.endswith((".json", ".svg", ".md")):
-            with open(os.path.join(ASSETS, fn)) as f:
-                blob.append((fn, f.read()))
+    for directory in SCANNED:
+        if not os.path.isdir(directory):
+            continue
+        for fn in sorted(os.listdir(directory)):
+            if fn.endswith((".json", ".svg", ".md")):
+                with open(os.path.join(directory, fn)) as f:
+                    blob.append((os.path.join(os.path.basename(directory), fn),
+                                 f.read()))
 
     leaks = []
     for name in sorted(names, key=len, reverse=True):

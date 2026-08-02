@@ -176,6 +176,55 @@ def activity():
     return {k: v["issueCount"] for k, v in d.items()}
 
 
+WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+
+
+def rhythm(days):
+    """Streaks and weekday distribution — the two facts the 3D chart's empty
+    corners can carry that aren't already on the analytics panel."""
+    days = sorted(days, key=lambda d: d["date"])
+
+    longest = run = 0
+    start = longest_start = None
+    for d in days:
+        if d["contributionCount"] > 0:
+            start = start or d["date"]
+            run += 1
+            if run > longest:
+                longest, longest_start = run, start
+        else:
+            run, start = 0, None
+    # Trailing run: the streak still open as of the last day with data.
+    current, current_start = 0, None
+    for d in reversed(days):
+        if d["contributionCount"] <= 0:
+            break
+        current += 1
+        current_start = d["date"]
+
+    by_day = {}
+    for d in days:
+        by_day[d["weekday"]] = by_day.get(d["weekday"], 0) + d["contributionCount"]
+
+    active = sum(1 for d in days if d["contributionCount"] > 0)
+    total = sum(d["contributionCount"] for d in days)
+    peak = max(days, key=lambda d: d["contributionCount"]) if days else None
+
+    return {
+        "current_streak": current,
+        "current_streak_start": current_start,
+        "longest_streak": longest,
+        "longest_streak_start": longest_start,
+        "active_days": active,
+        "total_days": len(days),
+        "peak": peak["contributionCount"] if peak else 0,
+        "peak_date": peak["date"] if peak else None,
+        "avg_per_active_day": round(total / active) if active else 0,
+        "weekdays": [{"day": WEEKDAYS[i], "count": by_day.get(i, 0)}
+                     for i in range(7)],
+    }
+
+
 def collect():
     ident = gql("""
     query($login: String!) {
@@ -188,7 +237,7 @@ def collect():
           restrictedContributionsCount
           contributionCalendar {
             totalContributions
-            weeks { contributionDays { date contributionCount } }
+            weeks { contributionDays { date weekday contributionCount } }
           }
         }
       }
@@ -248,6 +297,7 @@ def collect():
         },
         "months": [{"month": m, "count": months[m]} for m in order],
         "activity": activity(),
+        "rhythm": rhythm(days),
         # If the token can't see private work, restricted stays high while our
         # own walk finds only public repos. Surfacing this makes PAT expiry
         # visible instead of silently halving the numbers.
@@ -298,6 +348,7 @@ def aggregate(bundle):
         },
         "calendar": bundle["calendar"],
         "months": bundle["months"],
+        "rhythm": bundle["rhythm"],
         # Radar axes need commits and repos alongside the search-derived
         # counts; reviews is carried in the data but not plotted (it is 0).
         "activity": dict(bundle["activity"],

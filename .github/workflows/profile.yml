@@ -44,12 +44,6 @@ jobs:
         with:
           python-version: "3.12"
 
-      # The action's radar and language donut are built from public data only
-      # and badly undersell this account, so they get stripped. Runs
-      # unconditionally — it only touches the chart the step above just wrote.
-      - name: Trim 3D chart panels
-        run: python scripts/trim_3d_chart.py
-
       # Skipped without a PAT, rather than run and overwrite the committed
       # figures with public-only ones (which would report ~85 commits instead
       # of ~2,600). Set it with:
@@ -65,6 +59,13 @@ jobs:
         run: |
           echo "::warning::PROFILE_TOKEN not set — commit analytics not rebuilt." \
                "The 3D chart still updated."
+
+      # Strips the action's public-data-only radar and donut, then fills the
+      # space with the streak and weekday blocks. Must run after the analytics
+      # step: it reads assets/stats.json. Runs unconditionally — without a PAT
+      # that file is simply the committed copy from the last good run.
+      - name: Decorate 3D chart
+        run: python scripts/decorate_3d_chart.py
 
       # Blocks the commit if a private repo name reached a committed artifact.
       - name: Privacy gate

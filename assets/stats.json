@@ -68,6 +68,47 @@
       "count": 44
     }
   ],
+  "rhythm": {
+    "current_streak": 35,
+    "current_streak_start": "2026-06-29",
+    "longest_streak": 35,
+    "longest_streak_start": "2026-06-29",
+    "active_days": 145,
+    "total_days": 365,
+    "peak": 69,
+    "peak_date": "2025-11-28",
+    "avg_per_active_day": 13,
+    "weekdays": [
+      {
+        "day": "Sun",
+        "count": 145
+      },
+      {
+        "day": "Mon",
+        "count": 370
+      },
+      {
+        "day": "Tue",
+        "count": 361
+      },
+      {
+        "day": "Wed",
+        "count": 272
+      },
+      {
+        "day": "Thu",
+        "count": 298
+      },
+      {
+        "day": "Fri",
+        "count": 329
+      },
+      {
+        "day": "Sat",
+        "count": 166
+      }
+    ]
+  },
   "activity": {
     "prs": 108,
     "merged": 54,
