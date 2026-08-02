@@ -44,6 +44,12 @@ jobs:
         with:
           python-version: "3.12"
 
+      # The action's radar and language donut are built from public data only
+      # and badly undersell this account, so they get stripped. Runs
+      # unconditionally — it only touches the chart the step above just wrote.
+      - name: Trim 3D chart panels
+        run: python scripts/trim_3d_chart.py
+
       # Skipped without a PAT, rather than run and overwrite the committed
       # figures with public-only ones (which would report ~85 commits instead
       # of ~2,600). Set it with:

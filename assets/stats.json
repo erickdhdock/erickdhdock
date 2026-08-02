@@ -4,15 +4,77 @@
   "name": "Eric Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 2607,
-    "commits_last_year": 1808,
+    "commits_all_time": 2608,
+    "commits_last_year": 1809,
     "repos": 93,
     "repos_private": 70
   },
   "calendar": {
-    "total": 1938,
+    "total": 1939,
     "active_days": 145,
     "peak": 69
+  },
+  "months": [
+    {
+      "month": "2025-08",
+      "count": 45
+    },
+    {
+      "month": "2025-09",
+      "count": 1
+    },
+    {
+      "month": "2025-10",
+      "count": 90
+    },
+    {
+      "month": "2025-11",
+      "count": 270
+    },
+    {
+      "month": "2025-12",
+      "count": 76
+    },
+    {
+      "month": "2026-01",
+      "count": 182
+    },
+    {
+      "month": "2026-02",
+      "count": 62
+    },
+    {
+      "month": "2026-03",
+      "count": 72
+    },
+    {
+      "month": "2026-04",
+      "count": 50
+    },
+    {
+      "month": "2026-05",
+      "count": 176
+    },
+    {
+      "month": "2026-06",
+      "count": 228
+    },
+    {
+      "month": "2026-07",
+      "count": 645
+    },
+    {
+      "month": "2026-08",
+      "count": 39
+    }
+  ],
+  "activity": {
+    "prs": 108,
+    "merged": 54,
+    "issues": 14,
+    "reviews": 0,
+    "commits": 2608,
+    "repos": 93
   },
   "owners": [
     {
@@ -52,8 +114,8 @@
       "name": "Personal",
       "repos": 15,
       "private": 5,
-      "all_time": 51,
-      "window": 25
+      "all_time": 52,
+      "window": 26
     },
     {
       "login": "AMUSELY",
@@ -67,13 +129,13 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 1088,
+      "commits": 1089,
       "pct": 42.7
     },
     {
       "name": "JavaScript",
       "commits": 697,
-      "pct": 27.4
+      "pct": 27.3
     },
     {
       "name": "Java",

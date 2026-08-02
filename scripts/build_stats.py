@@ -15,6 +15,7 @@ Stdlib only, so CI needs no pip install.
 """
 
 import json
+import math
 import os
 import ssl
 import sys
@@ -156,6 +157,25 @@ def scan(query, login, me, root_key):
     return rows
 
 
+def activity():
+    """PR / issue / review counts.
+
+    The search API resolves private repos the token can see, which the
+    contributions collection does not: it reports 0 pull requests for this
+    account while search finds 108, all but one of them private.
+    """
+    def q(expr):
+        return f'search(query: "{expr}", type: ISSUE) {{ issueCount }}'
+
+    d = gql("{ %s }" % " ".join([
+        f'prs: {q(f"author:{LOGIN} type:pr")}',
+        f'merged: {q(f"author:{LOGIN} type:pr is:merged")}',
+        f'issues: {q(f"author:{LOGIN} type:issue")}',
+        f'reviews: {q(f"reviewed-by:{LOGIN}")}',
+    ]))
+    return {k: v["issueCount"] for k, v in d.items()}
+
+
 def collect():
     ident = gql("""
     query($login: String!) {
@@ -208,6 +228,15 @@ def collect():
     cal = user["contributionsCollection"]["contributionCalendar"]
     days = [d for w in cal["weeks"] for d in w["contributionDays"]]
 
+    # Monthly rhythm, from the calendar so private days are included.
+    months, order = {}, []
+    for d in days:
+        key = d["date"][:7]
+        if key not in months:
+            months[key] = 0
+            order.append(key)
+        months[key] += d["contributionCount"]
+
     return {
         "rows": rows,
         "me_name": user["name"] or LOGIN,
@@ -217,6 +246,8 @@ def collect():
             "active_days": sum(1 for d in days if d["contributionCount"] > 0),
             "peak": max((d["contributionCount"] for d in days), default=0),
         },
+        "months": [{"month": m, "count": months[m]} for m in order],
+        "activity": activity(),
         # If the token can't see private work, restricted stays high while our
         # own walk finds only public repos. Surfacing this makes PAT expiry
         # visible instead of silently halving the numbers.
@@ -266,6 +297,12 @@ def aggregate(bundle):
             "repos_private": sum(1 for r in rows if r["private"]),
         },
         "calendar": bundle["calendar"],
+        "months": bundle["months"],
+        # Radar axes need commits and repos alongside the search-derived
+        # counts; reviews is carried in the data but not plotted (it is 0).
+        "activity": dict(bundle["activity"],
+                         commits=sum(r["all_time"] for r in rows),
+                         repos=len(rows)),
         # Org-level only. Private repo names deliberately never reach this file.
         "owners": owners,
         "languages": mix,
@@ -310,9 +347,38 @@ STACK_W = 340
 LEG_TOP = 280
 LEG_H = 22
 
+# Section 3: monthly rhythm (left) and the activity radar (right).
+MON_X = 28           # first column
+MON_W = 26           # column width
+MON_GAP = 10
+MON_BASE_OFF = 108   # baseline below the section title
+MON_MAX = 84         # tallest column
+RAD_CX = 682
+RAD_R = 70
+# Log rings, because commits (thousands) and issues (tens) share one plot.
+RAD_RINGS = [10, 100, 1000, 10000]
+# Reviews is deliberately not an axis: it is genuinely 0, and a vertex pinned
+# to the centre reads as a broken chart rather than as data. It stays in
+# stats.json. Repos is plotted in its place.
+RAD_AXES = [("Commits", "commits"), ("Pull requests", "prs"),
+            ("Merged", "merged"), ("Repos", "repos"), ("Issues", "issues")]
+
+
+MONTHS = ["J", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"]
+
 
 def esc(s):
     return (str(s).replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+
+
+def radar_pt(cx, cy, i, frac):
+    th = math.radians(i * (360.0 / len(RAD_AXES)))
+    return cx + RAD_R * frac * math.sin(th), cy - RAD_R * frac * math.cos(th)
+
+
+def rad_frac(v):
+    """Log scale: commits run to thousands while issues run to tens."""
+    return min(1.0, math.log10(v + 1) / 4.0)
 
 
 def n(v):
@@ -328,9 +394,18 @@ def render(d, p):
     owners = d["owners"][:6]
     langs = d["languages"]
 
+    act = d["activity"]
+    months = d["months"]
+
     org_bottom = ORG_TOP + (len(owners) - 1) * ROW_H + 6
     leg_bottom = LEG_TOP + (len(langs) - 1) * LEG_H + 6
-    rule_y = max(org_bottom, leg_bottom) + 22
+    mid_rule = max(org_bottom, leg_bottom) + 22
+
+    sec3_top = mid_rule + 30           # section-3 heading baseline
+    mon_base = sec3_top + MON_BASE_OFF
+    rad_cy = sec3_top + 76
+    # Lower radar labels sit ~96px below centre (axis label + value line).
+    rule_y = max(mon_base + 34, rad_cy + RAD_R + 46)
     foot_y = rule_y + 26
     h = foot_y + 18
     out = []
@@ -355,17 +430,18 @@ def render(d, p):
 
     # ---- KPI row (stat tiles, not a chart: four headline numbers)
     tiles = [
-        (n(t["commits_all_time"]), "commits authored, all-time"),
+        (n(t["commits_all_time"]), "commits authored"),
         (n(t["commits_last_year"]), "in the last 12 months"),
-        (n(t["repos"]), "repositories contributed to"),
+        (n(act["prs"]), "pull requests opened"),
+        (n(t["repos"]), "repositories"),
         (n(t["repos_private"]), "of them private"),
     ]
-    tw = (W - 56) / 4
+    tw = (W - 56) / len(tiles)
     for i, (val, lab) in enumerate(tiles):
         x = 28 + i * tw
-        a(f'<text x="{x:.0f}" y="108" font-size="33" font-weight="650" '
+        a(f'<text x="{x:.0f}" y="108" font-size="31" font-weight="650" '
           f'fill="{p["ink"]}">{val}</text>')
-        a(f'<text x="{x:.0f}" y="128" font-size="11.5" fill="{p["muted"]}">'
+        a(f'<text x="{x:.0f}" y="128" font-size="11" fill="{p["muted"]}">'
           f'{esc(lab)}</text>')
     a(f'<line x1="28" y1="152" x2="{W - 28}" y2="152" stroke="{p["rule"]}"/>')
 
@@ -457,6 +533,73 @@ def render(d, p):
         a(f'<text x="{STACK_X + STACK_W}" y="{ly}" font-size="11.5" '
           f'text-anchor="end" fill="{p["ink2"]}" font-weight="600" '
           f'style="font-variant-numeric:tabular-nums">{l["pct"]}%</text>')
+
+    a(f'<line x1="28" y1="{mid_rule}" x2="{W - 28}" y2="{mid_rule}" '
+      f'stroke="{p["rule"]}"/>')
+
+    # ---- section 3 headings
+    a(f'<text x="28" y="{sec3_top}" font-size="13" font-weight="600" '
+      f'fill="{p["ink2"]}">Contribution rhythm</text>')
+    a(f'<text x="28" y="{sec3_top + 18}" font-size="11" fill="{p["muted"]}">'
+      f'contributions per month, private included</text>')
+    a(f'<text x="{STACK_X}" y="{sec3_top}" font-size="13" font-weight="600" '
+      f'fill="{p["ink2"]}">Activity shape</text>')
+    a(f'<text x="{STACK_X}" y="{sec3_top + 18}" font-size="11" '
+      f'fill="{p["muted"]}">all-time totals, log scale</text>')
+
+    # ---- monthly columns: one hue, since length already carries magnitude
+    peak = max((m["count"] for m in months), default=1) or 1
+    for i, m in enumerate(months[-12:]):
+        x = MON_X + i * (MON_W + MON_GAP)
+        ht = max(2.0, MON_MAX * m["count"] / peak)
+        a(f'<rect x="{x}" y="{mon_base - ht:.1f}" width="{MON_W}" '
+          f'height="{ht:.1f}" rx="3" fill="{p["accent"]}">'
+          f'<animate attributeName="height" values="2;{ht:.1f}" dur="0.8s" '
+          f'begin="{0.05 * i:.2f}s" fill="freeze" calcMode="spline" '
+          f'keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>')
+        # Label the peak month only — a number on every column is noise.
+        if m["count"] == peak:
+            a(f'<text x="{x + MON_W / 2:.0f}" y="{mon_base - ht - 6:.1f}" '
+              f'font-size="10.5" text-anchor="middle" font-weight="600" '
+              f'fill="{p["ink"]}">{n(m["count"])}</text>')
+        a(f'<text x="{x + MON_W / 2:.0f}" y="{mon_base + 14}" font-size="9.5" '
+          f'text-anchor="middle" fill="{p["muted"]}">'
+          f'{MONTHS[int(m["month"][5:7]) - 1]}</text>')
+    a(f'<line x1="{MON_X}" y1="{mon_base}" '
+      f'x2="{MON_X + 12 * (MON_W + MON_GAP) - MON_GAP}" y2="{mon_base}" '
+      f'stroke="{p["rule"]}"/>')
+
+    # ---- activity radar
+    for ring in RAD_RINGS:
+        pts = " ".join(f"{x:.1f},{y:.1f}" for x, y in
+                       (radar_pt(RAD_CX, rad_cy, i, rad_frac(ring))
+                        for i in range(len(RAD_AXES))))
+        a(f'<polygon points="{pts}" fill="none" stroke="{p["rule"]}" '
+          f'stroke-dasharray="2 3"/>')
+    for i in range(len(RAD_AXES)):
+        x, y = radar_pt(RAD_CX, rad_cy, i, 1.0)
+        a(f'<line x1="{RAD_CX}" y1="{rad_cy}" x2="{x:.1f}" y2="{y:.1f}" '
+          f'stroke="{p["rule"]}"/>')
+
+    vals = [act.get(key, 0) for _, key in RAD_AXES]
+    shape = " ".join(f"{x:.1f},{y:.1f}" for x, y in
+                     (radar_pt(RAD_CX, rad_cy, i, rad_frac(v))
+                      for i, v in enumerate(vals)))
+    a(f'<polygon points="{shape}" fill="{p["accent"]}" fill-opacity="0.22" '
+      f'stroke="{p["accent"]}" stroke-width="2" stroke-linejoin="round"/>')
+
+    # Every axis carries its number as text. A log-scale radar flatters the
+    # shape, so the figures — not the polygon — are what should be read.
+    for i, (label, key) in enumerate(RAD_AXES):
+        lx, ly = radar_pt(RAD_CX, rad_cy, i, 1.0 + 20.0 / RAD_R)
+        anchor = "middle" if i == 0 else ("start" if lx > RAD_CX else "end")
+        dy = -4 if i == 0 else (10 if ly > rad_cy else 0)
+        a(f'<text x="{lx:.0f}" y="{ly + dy:.0f}" font-size="10.5" '
+          f'text-anchor="{anchor}" fill="{p["muted"]}">{esc(label)}</text>')
+        a(f'<text x="{lx:.0f}" y="{ly + dy + 13:.0f}" font-size="12" '
+          f'text-anchor="{anchor}" font-weight="600" fill="{p["ink"]}" '
+          f'style="font-variant-numeric:tabular-nums">'
+          f'{n(act.get(key, 0))}</text>')
 
     # ---- footer
     c = d["calendar"]
