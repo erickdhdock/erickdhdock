@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-08-02",
+  "login": "erickdhdock",
+  "name": "Eric Kang",
+  "public_only": false,
+  "totals": {
+    "commits_all_time": 2606,
+    "commits_last_year": 1807,
+    "repos": 92,
+    "repos_private": 70
+  },
+  "calendar": {
+    "total": 1936,
+    "active_days": 145,
+    "peak": 69
+  },
+  "owners": [
+    {
+      "login": "ladiate-ai",
+      "name": "Ladiate",
+      "repos": 33,
+      "private": 31,
+      "all_time": 939,
+      "window": 924
+    },
+    {
+      "login": "VNE-MedTech",
+      "name": "VNE Medical Technologies",
+      "repos": 21,
+      "private": 18,
+      "all_time": 830,
+      "window": 830
+    },
+    {
+      "login": "Claw-For-Humanity",
+      "name": "Claw For Humanity",
+      "repos": 21,
+      "private": 13,
+      "all_time": 467,
+      "window": 0
+    },
+    {
+      "login": "Garibaldi-Robotics",
+      "name": "Garibaldi-Robotics",
+      "repos": 2,
+      "private": 2,
+      "all_time": 291,
+      "window": 0
+    },
+    {
+      "login": "erickdhdock",
+      "name": "Personal",
+      "repos": 14,
+      "private": 5,
+      "all_time": 50,
+      "window": 24
+    },
+    {
+      "login": "AMUSELY",
+      "name": "Amusely Music",
+      "repos": 1,
+      "private": 1,
+      "all_time": 29,
+      "window": 29
+    }
+  ],
+  "languages": [
+    {
+      "name": "Python",
+      "commits": 1087,
+      "pct": 42.7
+    },
+    {
+      "name": "JavaScript",
+      "commits": 697,
+      "pct": 27.4
+    },
+    {
+      "name": "Java",
+      "commits": 291,
+      "pct": 11.4
+    },
+    {
+      "name": "TypeScript",
+      "commits": 212,
+      "pct": 8.3
+    },
+    {
+      "name": "CSS",
+      "commits": 100,
+      "pct": 3.9
+    },
+    {
+      "name": "Other",
+      "commits": 160,
+      "pct": 6.3
+    }
+  ],
+  "public_repos_by_commits": [
+    {
+      "repo": "Claw-For-Humanity/Hawk-Brain-V2",
+      "commits": 69,
+      "stars": 0
+    },
+    {
+      "repo": "VNE-MedTech/TearSense-Results",
+      "commits": 51,
+      "stars": 0
+    },
+    {
+      "repo": "Claw-For-Humanity/plugins",
+      "commits": 47,
+      "stars": 0
+    },
+    {
+      "repo": "Claw-For-Humanity/Google-Circularnet-InferenceAPI",
+      "commits": 28,
+      "stars": 0
+    },
+    {
+      "repo": "ladiate-ai/ProjectQ",
+      "commits": 13,
+      "stars": 0
+    }
+  ]
+}

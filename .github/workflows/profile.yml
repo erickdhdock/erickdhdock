@@ -1,0 +1,78 @@
+name: Profile
+
+on:
+  schedule:
+    # 18:00 UTC daily
+    - cron: "0 18 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "assets/**"
+      - "profile-3d-contrib/**"
+
+# No pull_request trigger on purpose: this is a public repo holding a
+# repo-scoped PAT, so the secret stays off any fork-triggerable path.
+permissions:
+  contents: write
+
+concurrency:
+  group: profile
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      # Step-level `if` can't read the secrets context directly.
+      HAS_PAT: ${{ secrets.PROFILE_TOKEN != '' && 'yes' || 'no' }}
+    steps:
+      - uses: actions/checkout@v5
+
+      # Renders profile-day.svg + profile-night.svg from the settings array.
+      # The default GITHUB_TOKEN is enough here: "include private contributions
+      # on my profile" is enabled, so the calendar it reads already carries the
+      # private counts.
+      - name: Build 3D contribution chart
+        uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: .github/settings/3d-contrib.json
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Skipped without a PAT, rather than run and overwrite the committed
+      # figures with public-only ones (which would report ~85 commits instead
+      # of ~2,600). Set it with:
+      #   gh secret set PROFILE_TOKEN --repo erickdhdock/erickdhdock
+      - name: Build commit analytics
+        if: env.HAS_PAT == 'yes'
+        env:
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: python scripts/build_stats.py
+
+      - name: Note missing PAT
+        if: env.HAS_PAT != 'yes'
+        run: |
+          echo "::warning::PROFILE_TOKEN not set — commit analytics not rebuilt." \
+               "The 3D chart still updated."
+
+      # Blocks the commit if a private repo name reached a committed artifact.
+      - name: Privacy gate
+        if: env.HAS_PAT == 'yes'
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_TOKEN }}
+        run: python scripts/check_privacy.py
+
+      - name: Commit & push
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          # Nothing to do when the numbers haven't moved.
+          git diff --staged --quiet && echo "no changes" && exit 0
+          git commit -m "chore: refresh profile stats"
+          git push

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="462" viewBox="0 0 880 462" role="img" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif">
+<title>Commit analytics for Eric Kang</title>
+<desc>2,606 commits authored all-time, 1,807 in the last 12 months, across 92 repositories (70 private) in 6 accounts. Top language Python at 42.7 percent.</desc>
+<rect width="880" height="462" rx="8" fill="#0d1117"/>
+<text x="28" y="40" font-size="17" font-weight="600" fill="#ffffff">Commit analytics</text>
+<text x="852" y="40" font-size="11.5" text-anchor="end" fill="#898781">updated 2026-08-02</text>
+<line x1="28" y1="58" x2="852" y2="58" stroke="#2c2c2a"/>
+<text x="28" y="108" font-size="33" font-weight="650" fill="#ffffff">2,606</text>
+<text x="28" y="128" font-size="11.5" fill="#898781">commits authored, all-time</text>
+<text x="234" y="108" font-size="33" font-weight="650" fill="#ffffff">1,807</text>
+<text x="234" y="128" font-size="11.5" fill="#898781">in the last 12 months</text>
+<text x="440" y="108" font-size="33" font-weight="650" fill="#ffffff">92</text>
+<text x="440" y="128" font-size="11.5" fill="#898781">repositories contributed to</text>
+<text x="646" y="108" font-size="33" font-weight="650" fill="#ffffff">70</text>
+<text x="646" y="128" font-size="11.5" fill="#898781">of them private</text>
+<line x1="28" y1="152" x2="852" y2="152" stroke="#2c2c2a"/>
+<text x="28" y="180" font-size="13" font-weight="600" fill="#c3c2b7">Where the commits go</text>
+<text x="28" y="198" font-size="11" fill="#898781">authored commits per account, all-time</text>
+<text x="512" y="180" font-size="13" font-weight="600" fill="#c3c2b7">Language mix</text>
+<text x="512" y="198" font-size="11" fill="#898781">repos weighted by commits authored</text>
+<clipPath id="bars"><rect x="164" y="150" width="880" height="462"/></clipPath>
+<text x="28" y="240" font-size="12" fill="#c3c2b7">Ladiate</text>
+<rect x="164" y="230" width="156" height="12" rx="4" fill="#1b2027"/>
+<g clip-path="url(#bars)"><rect x="160" y="230" width="4" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;160.0" dur="0.9s" begin="0.00s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<text x="372" y="240" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">939</text>
+<text x="468" y="240" font-size="11" text-anchor="end" fill="#898781">924 recent</text>
+<text x="28" y="270" font-size="12" fill="#c3c2b7">VNE-MedTech</text>
+<rect x="164" y="260" width="156" height="12" rx="4" fill="#1b2027"/>
+<g clip-path="url(#bars)"><rect x="160" y="260" width="4" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;141.9" dur="0.9s" begin="0.08s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<text x="372" y="270" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">830</text>
+<text x="468" y="270" font-size="11" text-anchor="end" fill="#898781">830 recent</text>
+<text x="28" y="300" font-size="12" fill="#c3c2b7">Claw For Humanity</text>
+<rect x="164" y="290" width="156" height="12" rx="4" fill="#1b2027"/>
+<g clip-path="url(#bars)"><rect x="160" y="290" width="4" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;81.6" dur="0.9s" begin="0.16s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<text x="372" y="300" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">467</text>
+<text x="468" y="300" font-size="11" text-anchor="end" fill="#898781">dormant</text>
+<text x="28" y="330" font-size="12" fill="#c3c2b7">Garibaldi-Robotics</text>
+<rect x="164" y="320" width="156" height="12" rx="4" fill="#1b2027"/>
+<g clip-path="url(#bars)"><rect x="160" y="320" width="4" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;52.3" dur="0.9s" begin="0.24s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<text x="372" y="330" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">291</text>
+<text x="468" y="330" font-size="11" text-anchor="end" fill="#898781">dormant</text>
+<text x="28" y="360" font-size="12" fill="#c3c2b7">Personal</text>
+<rect x="164" y="350" width="156" height="12" rx="4" fill="#1b2027"/>
+<g clip-path="url(#bars)"><rect x="160" y="350" width="4" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;12.3" dur="0.9s" begin="0.32s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<text x="372" y="360" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">50</text>
+<text x="468" y="360" font-size="11" text-anchor="end" fill="#898781">24 recent</text>
+<text x="28" y="390" font-size="12" fill="#c3c2b7">Amusely Music</text>
+<rect x="164" y="380" width="156" height="12" rx="4" fill="#1b2027"/>
+<g clip-path="url(#bars)"><rect x="160" y="380" width="4" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;8.8" dur="0.9s" begin="0.40s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<text x="372" y="390" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">29</text>
+<text x="468" y="390" font-size="11" text-anchor="end" fill="#898781">29 recent</text>
+<clipPath id="stack"><rect x="512" y="232" width="340" height="22" rx="4"/></clipPath>
+<clipPath id="reveal"><rect x="512" y="232" width="0" height="22"><animate attributeName="width" values="0;340" dur="1.0s" begin="0.1s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></clipPath>
+<g clip-path="url(#stack)"><g clip-path="url(#reveal)">
+<rect x="512.0" y="232" width="143.2" height="22" fill="#3987e5"/>
+<rect x="657.2" y="232" width="91.2" height="22" fill="#d95926"/>
+<rect x="750.3" y="232" width="36.8" height="22" fill="#199e70"/>
+<rect x="789.1" y="232" width="26.2" height="22" fill="#c98500"/>
+<rect x="817.3" y="232" width="11.3" height="22" fill="#d55181"/>
+<rect x="830.6" y="232" width="19.4" height="22" fill="#898781"/>
+</g></g>
+<rect x="512" y="271" width="10" height="10" rx="2.5" fill="#3987e5"/>
+<text x="530" y="280" font-size="11.5" fill="#c3c2b7">Python</text>
+<text x="800" y="280" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">1,087</text>
+<text x="852" y="280" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">42.7%</text>
+<rect x="512" y="293" width="10" height="10" rx="2.5" fill="#d95926"/>
+<text x="530" y="302" font-size="11.5" fill="#c3c2b7">JavaScript</text>
+<text x="800" y="302" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">697</text>
+<text x="852" y="302" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">27.4%</text>
+<rect x="512" y="315" width="10" height="10" rx="2.5" fill="#199e70"/>
+<text x="530" y="324" font-size="11.5" fill="#c3c2b7">Java</text>
+<text x="800" y="324" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">291</text>
+<text x="852" y="324" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">11.4%</text>
+<rect x="512" y="337" width="10" height="10" rx="2.5" fill="#c98500"/>
+<text x="530" y="346" font-size="11.5" fill="#c3c2b7">TypeScript</text>
+<text x="800" y="346" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">212</text>
+<text x="852" y="346" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">8.3%</text>
+<rect x="512" y="359" width="10" height="10" rx="2.5" fill="#d55181"/>
+<text x="530" y="368" font-size="11.5" fill="#c3c2b7">CSS</text>
+<text x="800" y="368" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">100</text>
+<text x="852" y="368" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">3.9%</text>
+<rect x="512" y="381" width="10" height="10" rx="2.5" fill="#898781"/>
+<text x="530" y="390" font-size="11.5" fill="#c3c2b7">Other</text>
+<text x="800" y="390" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">160</text>
+<text x="852" y="390" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">6.3%</text>
+<line x1="28" y1="418" x2="852" y2="418" stroke="#2c2c2a"/>
+<text x="28" y="444" font-size="11.5" fill="#898781">1,936 contributions in the last year · 145 active days · peak 69 in a day</text>
+<text x="852" y="444" font-size="11.5" text-anchor="end" fill="#898781">private repos aggregated by account</text>
+</svg>
