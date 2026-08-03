@@ -1,3 +1,5 @@
+Hi there, I am a student at UNSW (BMed/MD II) & a Full Stack Developer
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile-3d-contrib/profile-night.svg">
   <img alt="Isometric 3D chart of my GitHub contributions over the last year" src="./profile-3d-contrib/profile-day.svg">
