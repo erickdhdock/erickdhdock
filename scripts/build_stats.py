@@ -194,9 +194,15 @@ def rhythm(days):
                 longest, longest_start = run, start
         else:
             run, start = 0, None
-    # Trailing run: the streak still open as of the last day with data.
+    # Trailing run: the streak still open as of the last day with data. The
+    # calendar always ends on today, and today is a day in progress — the 18:00
+    # UTC run would otherwise read every not-yet-committed morning as a broken
+    # streak. So an empty final day is skipped and the run measured through
+    # yesterday; it only counts against the streak once tomorrow's calendar
+    # makes it a completed empty day.
+    tail = days[:-1] if days and days[-1]["contributionCount"] <= 0 else days
     current, current_start = 0, None
-    for d in reversed(days):
+    for d in reversed(tail):
         if d["contributionCount"] <= 0:
             break
         current += 1

@@ -61,6 +61,10 @@ def text(x, y, body, size, cls="fill-fg", anchor="start", weight=None):
 
 
 def pretty_date(iso):
+    """None for a date the stats couldn't establish, so callers word around it
+    instead of rendering "None" or dying on a subscript."""
+    if not iso:
+        return None
     return f"{int(iso[8:10])} {MONTHS[int(iso[5:7]) - 1]} {iso[:4]}"
 
 
@@ -69,17 +73,25 @@ def streak_block(r):
     g = el("g", transform="translate(946, 96)")
     g.append(text(0, 62, r["current_streak"], 64, "fill-strong", weight=700))
     g.append(text(0, 88, "DAY STREAK", 14, "fill-fg", weight=600))
-    same = r["current_streak"] == r["longest_streak"]
-    tail = ", longest of the year" if same else ""
-    g.append(text(0, 108,
-                  f"unbroken since {pretty_date(r['current_streak_start'])}"
-                  f"{tail}", 11.5, "fill-weak"))
+    # A broken streak has no start date. Say what the year's best run was
+    # rather than leaving the line under the number blank.
+    since = pretty_date(r.get("current_streak_start"))
+    if since:
+        same = r["current_streak"] == r["longest_streak"]
+        tail = ", longest of the year" if same else ""
+        caption = f"unbroken since {since}{tail}"
+    else:
+        best = pretty_date(r.get("longest_streak_start"))
+        caption = f"longest this year: {r['longest_streak']} days"
+        caption += f", from {best}" if best else ""
+    g.append(text(0, 108, caption, 11.5, "fill-weak"))
     line = el("line", x1=0, y1=128, x2=296, y2=128, stroke_opacity="0.35")
     line.set("class", "stroke-weak")
     g.append(line)
+    peak_on = pretty_date(r.get("peak_date"))
     rows = [
         (r["active_days"], f"active days of {r['total_days']}"),
-        (r["peak"], f"busiest day, {pretty_date(r['peak_date'])}"),
+        (r["peak"], f"busiest day, {peak_on}" if peak_on else "busiest day"),
         (r["avg_per_active_day"], "average per active day"),
     ]
     for i, (val, lab) in enumerate(rows):
@@ -160,7 +172,15 @@ def decorate(path, stats):
     added = []
     if stats and stats.get("rhythm"):
         for build in (streak_block, weekday_block):
-            block = build(stats["rhythm"])
+            try:
+                block = build(stats["rhythm"])
+            except (KeyError, TypeError, ValueError) as exc:
+                # A stats.json shaped differently than this expects costs one
+                # block, not the whole refresh: the trimmed chart still ships,
+                # and the log names what went missing.
+                print(f"  ! {name}: {build.__name__} skipped ({exc!r})",
+                      file=sys.stderr)
+                continue
             block.set("data-injected", "1")
             root.append(block)
             added.append(build.__name__.replace("_block", ""))
