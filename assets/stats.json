@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-13",
+  "generated_at": "2026-08-14",
   "login": "erickdhdock",
-  "name": "Eric Kang",
+  "name": "Eric Changbean Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 2987,
-    "commits_last_year": 2188,
+    "commits_all_time": 2995,
+    "commits_last_year": 2196,
     "repos": 95,
     "repos_private": 72
   },
   "calendar": {
-    "total": 2334,
-    "active_days": 157,
+    "total": 2328,
+    "active_days": 158,
     "peak": 106
   },
   "months": [
@@ -25,19 +25,19 @@
     },
     {
       "month": "2025-10",
-      "count": 90
+      "count": 88
     },
     {
       "month": "2025-11",
-      "count": 270
+      "count": 260
     },
     {
       "month": "2025-12",
-      "count": 76
+      "count": 60
     },
     {
       "month": "2026-01",
-      "count": 182
+      "count": 184
     },
     {
       "month": "2026-02",
@@ -45,7 +45,7 @@
     },
     {
       "month": "2026-03",
-      "count": 72
+      "count": 71
     },
     {
       "month": "2026-04",
@@ -53,28 +53,28 @@
     },
     {
       "month": "2026-05",
-      "count": 176
+      "count": 185
     },
     {
       "month": "2026-06",
-      "count": 228
+      "count": 232
     },
     {
       "month": "2026-07",
-      "count": 645
+      "count": 646
     },
     {
       "month": "2026-08",
-      "count": 437
+      "count": 444
     }
   ],
   "rhythm": {
-    "current_streak": 47,
+    "current_streak": 48,
     "current_streak_start": "2026-06-29",
-    "longest_streak": 47,
+    "longest_streak": 48,
     "longest_streak_start": "2026-06-29",
-    "active_days": 157,
-    "total_days": 370,
+    "active_days": 158,
+    "total_days": 371,
     "peak": 106,
     "peak_date": "2026-08-12",
     "avg_per_active_day": 15,
@@ -85,15 +85,15 @@
       },
       {
         "day": "Mon",
-        "count": 438
+        "count": 433
       },
       {
         "day": "Tue",
-        "count": 424
+        "count": 426
       },
       {
         "day": "Wed",
-        "count": 380
+        "count": 385
       },
       {
         "day": "Thu",
@@ -101,11 +101,11 @@
       },
       {
         "day": "Fri",
-        "count": 339
+        "count": 327
       },
       {
         "day": "Sat",
-        "count": 182
+        "count": 186
       }
     ]
   },
@@ -114,7 +114,7 @@
     "merged": 73,
     "issues": 14,
     "reviews": 0,
-    "commits": 2987,
+    "commits": 2995,
     "repos": 95
   },
   "owners": [
@@ -123,20 +123,20 @@
       "name": "Ladiate",
       "repos": 33,
       "private": 31,
-      "all_time": 1084,
-      "window": 1069,
-      "hours": 1626,
-      "hours_last_year": 1604
+      "all_time": 1091,
+      "window": 1076,
+      "hours": 1636,
+      "hours_last_year": 1614
     },
     {
       "login": "VNE-MedTech",
       "name": "VNE Medical Technologies",
       "repos": 23,
       "private": 20,
-      "all_time": 1057,
-      "window": 1057,
-      "hours": 1586,
-      "hours_last_year": 1586
+      "all_time": 1058,
+      "window": 1058,
+      "hours": 1587,
+      "hours_last_year": 1587
     },
     {
       "login": "Claw-For-Humanity",
@@ -182,18 +182,18 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 1326,
+      "commits": 1329,
       "pct": 45.3
     },
     {
       "name": "JavaScript",
-      "commits": 808,
-      "pct": 27.6
+      "commits": 813,
+      "pct": 27.7
     },
     {
       "name": "Java",
       "commits": 291,
-      "pct": 10.0
+      "pct": 9.9
     },
     {
       "name": "TypeScript",
