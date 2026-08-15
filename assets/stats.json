@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-08-14",
+  "generated_at": "2026-08-15",
   "login": "erickdhdock",
   "name": "Eric Changbean Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 2995,
-    "commits_last_year": 2196,
+    "commits_all_time": 3040,
+    "commits_last_year": 2237,
     "repos": 95,
     "repos_private": 72
   },
   "calendar": {
-    "total": 2328,
-    "active_days": 158,
+    "total": 2384,
+    "active_days": 157,
     "peak": 106
   },
   "months": [
     {
       "month": "2025-08",
-      "count": 45
+      "count": 16
     },
     {
       "month": "2025-09",
@@ -65,23 +65,23 @@
     },
     {
       "month": "2026-08",
-      "count": 444
+      "count": 500
     }
   ],
   "rhythm": {
-    "current_streak": 48,
+    "current_streak": 49,
     "current_streak_start": "2026-06-29",
-    "longest_streak": 48,
+    "longest_streak": 49,
     "longest_streak_start": "2026-06-29",
-    "active_days": 158,
-    "total_days": 371,
+    "active_days": 157,
+    "total_days": 365,
     "peak": 106,
     "peak_date": "2026-08-12",
     "avg_per_active_day": 15,
     "weekdays": [
       {
         "day": "Sun",
-        "count": 244
+        "count": 257
       },
       {
         "day": "Mon",
@@ -101,20 +101,20 @@
       },
       {
         "day": "Fri",
-        "count": 327
+        "count": 325
       },
       {
         "day": "Sat",
-        "count": 186
+        "count": 202
       }
     ]
   },
   "activity": {
-    "prs": 127,
-    "merged": 73,
+    "prs": 138,
+    "merged": 84,
     "issues": 14,
     "reviews": 0,
-    "commits": 2995,
+    "commits": 3040,
     "repos": 95
   },
   "owners": [
@@ -123,10 +123,10 @@
       "name": "Ladiate",
       "repos": 33,
       "private": 31,
-      "all_time": 1091,
-      "window": 1076,
-      "hours": 1636,
-      "hours_last_year": 1614
+      "all_time": 1136,
+      "window": 1117,
+      "hours": 1704,
+      "hours_last_year": 1676
     },
     {
       "login": "VNE-MedTech",
@@ -182,23 +182,23 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 1329,
-      "pct": 45.3
+      "commits": 1333,
+      "pct": 44.8
     },
     {
       "name": "JavaScript",
-      "commits": 813,
-      "pct": 27.7
+      "commits": 853,
+      "pct": 28.7
     },
     {
       "name": "Java",
       "commits": 291,
-      "pct": 9.9
+      "pct": 9.8
     },
     {
       "name": "TypeScript",
       "commits": 231,
-      "pct": 7.9
+      "pct": 7.8
     },
     {
       "name": "CSS",
@@ -207,7 +207,7 @@
     },
     {
       "name": "Other",
-      "commits": 168,
+      "commits": 169,
       "pct": 5.7
     }
   ],
