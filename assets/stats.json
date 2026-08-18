@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-08-17",
+  "generated_at": "2026-08-18",
   "login": "erickdhdock",
   "name": "Eric Changbean Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 3123,
-    "commits_last_year": 2281,
+    "commits_all_time": 3188,
+    "commits_last_year": 2346,
     "repos": 95,
     "repos_private": 72
   },
   "calendar": {
-    "total": 2449,
-    "active_days": 159,
+    "total": 2529,
+    "active_days": 160,
     "peak": 106
   },
   "months": [
@@ -65,19 +65,19 @@
     },
     {
       "month": "2026-08",
-      "count": 594
+      "count": 674
     }
   ],
   "rhythm": {
-    "current_streak": 51,
+    "current_streak": 52,
     "current_streak_start": "2026-06-29",
-    "longest_streak": 51,
+    "longest_streak": 52,
     "longest_streak_start": "2026-06-29",
-    "active_days": 159,
-    "total_days": 367,
+    "active_days": 160,
+    "total_days": 368,
     "peak": 106,
     "peak_date": "2026-08-12",
-    "avg_per_active_day": 15,
+    "avg_per_active_day": 16,
     "weekdays": [
       {
         "day": "Sun",
@@ -89,11 +89,11 @@
       },
       {
         "day": "Tue",
-        "count": 432
+        "count": 493
       },
       {
         "day": "Wed",
-        "count": 385
+        "count": 404
       },
       {
         "day": "Thu",
@@ -110,11 +110,11 @@
     ]
   },
   "activity": {
-    "prs": 149,
-    "merged": 95,
+    "prs": 164,
+    "merged": 109,
     "issues": 14,
     "reviews": 0,
-    "commits": 3123,
+    "commits": 3188,
     "repos": 95
   },
   "owners": [
@@ -123,10 +123,10 @@
       "name": "Ladiate",
       "repos": 33,
       "private": 31,
-      "all_time": 1219,
-      "window": 1161,
-      "hours": 1828,
-      "hours_last_year": 1742
+      "all_time": 1284,
+      "window": 1226,
+      "hours": 1926,
+      "hours_last_year": 1839
     },
     {
       "login": "VNE-MedTech",
@@ -182,33 +182,33 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 1360,
-      "pct": 44.4
+      "commits": 1377,
+      "pct": 44.1
     },
     {
       "name": "JavaScript",
-      "commits": 904,
-      "pct": 29.5
+      "commits": 944,
+      "pct": 30.2
     },
     {
       "name": "Java",
       "commits": 291,
-      "pct": 9.5
+      "pct": 9.3
     },
     {
       "name": "TypeScript",
       "commits": 231,
-      "pct": 7.5
+      "pct": 7.4
     },
     {
       "name": "CSS",
       "commits": 100,
-      "pct": 3.3
+      "pct": 3.2
     },
     {
       "name": "Other",
-      "commits": 174,
-      "pct": 5.7
+      "commits": 180,
+      "pct": 5.8
     }
   ],
   "public_repos_by_commits": [
