@@ -1,16 +1,16 @@
 {
-  "generated_at": "2026-08-18",
+  "generated_at": "2026-08-19",
   "login": "erickdhdock",
   "name": "Eric Changbean Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 3188,
-    "commits_last_year": 2346,
+    "commits_all_time": 3205,
+    "commits_last_year": 2363,
     "repos": 95,
     "repos_private": 72
   },
   "calendar": {
-    "total": 2529,
+    "total": 2547,
     "active_days": 160,
     "peak": 106
   },
@@ -65,7 +65,7 @@
     },
     {
       "month": "2026-08",
-      "count": 674
+      "count": 692
     }
   ],
   "rhythm": {
@@ -74,7 +74,7 @@
     "longest_streak": 52,
     "longest_streak_start": "2026-06-29",
     "active_days": 160,
-    "total_days": 368,
+    "total_days": 369,
     "peak": 106,
     "peak_date": "2026-08-12",
     "avg_per_active_day": 16,
@@ -93,7 +93,7 @@
       },
       {
         "day": "Wed",
-        "count": 404
+        "count": 422
       },
       {
         "day": "Thu",
@@ -110,11 +110,11 @@
     ]
   },
   "activity": {
-    "prs": 164,
-    "merged": 109,
+    "prs": 165,
+    "merged": 110,
     "issues": 14,
     "reviews": 0,
-    "commits": 3188,
+    "commits": 3205,
     "repos": 95
   },
   "owners": [
@@ -123,10 +123,10 @@
       "name": "Ladiate",
       "repos": 33,
       "private": 31,
-      "all_time": 1284,
-      "window": 1226,
-      "hours": 1926,
-      "hours_last_year": 1839
+      "all_time": 1301,
+      "window": 1243,
+      "hours": 1952,
+      "hours_last_year": 1864
     },
     {
       "login": "VNE-MedTech",
@@ -183,12 +183,12 @@
     {
       "name": "Python",
       "commits": 1377,
-      "pct": 44.1
+      "pct": 43.9
     },
     {
       "name": "JavaScript",
-      "commits": 944,
-      "pct": 30.2
+      "commits": 961,
+      "pct": 30.6
     },
     {
       "name": "Java",
@@ -208,7 +208,7 @@
     {
       "name": "Other",
       "commits": 180,
-      "pct": 5.8
+      "pct": 5.7
     }
   ],
   "public_repos_by_commits": [
