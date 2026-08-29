@@ -69,12 +69,12 @@
     }
   ],
   "rhythm": {
-    "current_streak": 1,
-    "current_streak_start": "2026-08-28",
+    "current_streak": 0,
+    "current_streak_start": null,
     "longest_streak": 54,
     "longest_streak_start": "2026-06-29",
     "active_days": 162,
-    "total_days": 371,
+    "total_days": 365,
     "peak": 106,
     "peak_date": "2026-08-12",
     "avg_per_active_day": 16,
