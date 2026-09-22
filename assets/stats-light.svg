@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="684" viewBox="0 0 880 684" role="img" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif">
 <title>Commit analytics for Eric Changbean Kang</title>
-<desc>3,423 commits authored all-time, 2,580 in the last 12 months, across 97 repositories (74 private) in 6 accounts. Top language Python at 47.9 percent.</desc>
+<desc>3,428 commits authored all-time, 2,585 in the last 12 months, across 97 repositories (74 private) in 6 accounts. Top language Python at 48.0 percent.</desc>
 <rect width="880" height="684" rx="8" fill="#ffffff"/>
 <text x="28" y="40" font-size="17" font-weight="600" fill="#0b0b0b">Commit analytics</text>
-<text x="852" y="40" font-size="11.5" text-anchor="end" fill="#898781">updated 2026-09-21</text>
+<text x="852" y="40" font-size="11.5" text-anchor="end" fill="#898781">updated 2026-09-22</text>
 <line x1="28" y1="58" x2="852" y2="58" stroke="#e1e0d9"/>
-<text x="28" y="108" font-size="31" font-weight="650" fill="#0b0b0b">3,423</text>
+<text x="28" y="108" font-size="31" font-weight="650" fill="#0b0b0b">3,428</text>
 <text x="28" y="128" font-size="11" fill="#898781">commits authored</text>
-<text x="193" y="108" font-size="31" font-weight="650" fill="#0b0b0b">2,580</text>
+<text x="193" y="108" font-size="31" font-weight="650" fill="#0b0b0b">2,585</text>
 <text x="193" y="128" font-size="11" fill="#898781">in the last 12 months</text>
 <text x="358" y="108" font-size="31" font-weight="650" fill="#0b0b0b">180</text>
 <text x="358" y="128" font-size="11" fill="#898781">pull requests opened</text>
@@ -28,9 +28,9 @@
 <text x="470" y="240" font-size="11" text-anchor="end" fill="#898781">1,377 commits</text>
 <text x="28" y="270" font-size="12" fill="#52514e">VNE-MedTech</text>
 <rect x="148" y="260" width="140" height="12" rx="4" fill="#eceef1"/>
-<g clip-path="url(#bars)"><rect x="144" y="260" width="126.0" height="12" rx="4" fill="#2a78d6"><animate attributeName="width" values="4;126.0" dur="0.9s" begin="0.08s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
-<text x="340" y="270" font-size="12" text-anchor="end" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">1,800 h</text>
-<text x="470" y="270" font-size="11" text-anchor="end" fill="#898781">1,200 commits</text>
+<g clip-path="url(#bars)"><rect x="144" y="260" width="126.5" height="12" rx="4" fill="#2a78d6"><animate attributeName="width" values="4;126.5" dur="0.9s" begin="0.08s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<text x="340" y="270" font-size="12" text-anchor="end" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">1,808 h</text>
+<text x="470" y="270" font-size="11" text-anchor="end" fill="#898781">1,205 commits</text>
 <text x="28" y="300" font-size="12" fill="#52514e">Claw For Humanity</text>
 <rect x="148" y="290" width="140" height="12" rx="4" fill="#eceef1"/>
 <g clip-path="url(#bars)"><rect x="144" y="290" width="51.5" height="12" rx="4" fill="#2a78d6"><animate attributeName="width" values="4;51.5" dur="0.9s" begin="0.16s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
@@ -54,17 +54,17 @@
 <clipPath id="stack"><rect x="512" y="232" width="340" height="22" rx="4"/></clipPath>
 <clipPath id="reveal"><rect x="512" y="232" width="340" height="22"><animate attributeName="width" values="0;340" dur="1.0s" begin="0.1s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></clipPath>
 <g clip-path="url(#stack)"><g clip-path="url(#reveal)">
-<rect x="512.0" y="232" width="160.9" height="22" fill="#2a78d6"/>
-<rect x="674.9" y="232" width="100.0" height="22" fill="#eb6834"/>
+<rect x="512.0" y="232" width="161.0" height="22" fill="#2a78d6"/>
+<rect x="675.0" y="232" width="99.9" height="22" fill="#eb6834"/>
 <rect x="776.9" y="232" width="27.6" height="22" fill="#1baf7a"/>
-<rect x="806.4" y="232" width="19.8" height="22" fill="#eda100"/>
+<rect x="806.5" y="232" width="19.7" height="22" fill="#eda100"/>
 <rect x="828.2" y="232" width="8.2" height="22" fill="#e87ba4"/>
 <rect x="838.4" y="232" width="11.6" height="22" fill="#898781"/>
 </g></g>
 <rect x="512" y="271" width="10" height="10" rx="2.5" fill="#2a78d6"/>
 <text x="530" y="280" font-size="11.5" fill="#52514e">Python</text>
-<text x="800" y="280" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">1,604</text>
-<text x="852" y="280" font-size="11.5" text-anchor="end" fill="#52514e" font-weight="600" style="font-variant-numeric:tabular-nums">47.9%</text>
+<text x="800" y="280" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">1,609</text>
+<text x="852" y="280" font-size="11.5" text-anchor="end" fill="#52514e" font-weight="600" style="font-variant-numeric:tabular-nums">48.0%</text>
 <rect x="512" y="293" width="10" height="10" rx="2.5" fill="#eb6834"/>
 <text x="530" y="302" font-size="11.5" fill="#52514e">JavaScript</text>
 <text x="800" y="302" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">1,005</text>
@@ -123,8 +123,8 @@
 <rect x="398" y="488.0" width="28" height="80.0" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;80.0" dur="0.8s" begin="0.50s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
 <text x="412" y="483.0" font-size="9.5" text-anchor="middle" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">717</text>
 <text x="412" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Aug</text>
-<rect x="435" y="544.9" width="28" height="23.1" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;23.1" dur="0.8s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="449" y="539.9" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">207</text>
+<rect x="435" y="544.3" width="28" height="23.7" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;23.7" dur="0.8s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="449" y="539.3" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">212</text>
 <text x="449" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Sep</text>
 <line x1="28" y1="568" x2="463" y2="568" stroke="#e1e0d9"/>
 <polygon points="682.0,505.8 699.3,518.4 692.7,538.7 671.3,538.7 664.7,518.4" fill="none" stroke="#e1e0d9" stroke-dasharray="2 3"/>
@@ -136,18 +136,18 @@
 <line x1="682" y1="524" x2="723.1" y2="580.6" stroke="#e1e0d9"/>
 <line x1="682" y1="524" x2="640.9" y2="580.6" stroke="#e1e0d9"/>
 <line x1="682" y1="524" x2="615.4" y2="502.4" stroke="#e1e0d9"/>
-<polygon points="682.0,462.1 719.6,511.8 703.5,553.6 661.5,552.2 662.4,517.6" fill="#2a78d6" fill-opacity="0.22" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="682.0,462.1 719.6,511.8 703.6,553.7 661.5,552.2 662.4,517.6" fill="#2a78d6" fill-opacity="0.22" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round"/>
 <text x="682" y="430" font-size="10.5" text-anchor="middle" fill="#898781">Commits</text>
-<text x="682" y="443" font-size="12" text-anchor="middle" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">3,423</text>
+<text x="682" y="443" font-size="12" text-anchor="middle" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">3,428</text>
 <text x="768" y="496" font-size="10.5" text-anchor="start" fill="#898781">Pull requests</text>
 <text x="768" y="509" font-size="12" text-anchor="start" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">180</text>
 <text x="735" y="607" font-size="10.5" text-anchor="start" fill="#898781">Merged</text>
-<text x="735" y="620" font-size="12" text-anchor="start" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">123</text>
+<text x="735" y="620" font-size="12" text-anchor="start" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">124</text>
 <text x="629" y="607" font-size="10.5" text-anchor="end" fill="#898781">Repos</text>
 <text x="629" y="620" font-size="12" text-anchor="end" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">97</text>
 <text x="596" y="496" font-size="10.5" text-anchor="end" fill="#898781">Issues</text>
 <text x="596" y="509" font-size="12" text-anchor="end" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">14</text>
 <line x1="28" y1="640" x2="852" y2="640" stroke="#e1e0d9"/>
-<text x="28" y="666" font-size="11.5" fill="#898781">2,762 contributions in the last year · 174 active days · peak 106 in a day</text>
+<text x="28" y="666" font-size="11.5" fill="#898781">2,767 contributions in the last year · 175 active days · peak 106 in a day</text>
 <text x="852" y="666" font-size="11.5" text-anchor="end" fill="#898781">private repos aggregated by account</text>
 </svg>
