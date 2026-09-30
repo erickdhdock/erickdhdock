@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-29",
+  "generated_at": "2026-09-30",
   "login": "erickdhdock",
   "name": "Eric Changbean Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 3652,
-    "commits_last_year": 2809,
+    "commits_all_time": 3812,
+    "commits_last_year": 2969,
     "repos": 97,
     "repos_private": 74
   },
   "calendar": {
-    "total": 3040,
-    "active_days": 181,
-    "peak": 106
+    "total": 3153,
+    "active_days": 183,
+    "peak": 114
   },
   "months": [
     {
@@ -65,18 +65,22 @@
     },
     {
       "month": "2026-09",
-      "count": 485
+      "count": 580
+    },
+    {
+      "month": "2026-10",
+      "count": 18
     }
   ],
   "rhythm": {
-    "current_streak": 3,
+    "current_streak": 5,
     "current_streak_start": "2026-09-27",
     "longest_streak": 54,
     "longest_streak_start": "2026-06-29",
-    "active_days": 181,
-    "total_days": 368,
-    "peak": 106,
-    "peak_date": "2026-08-12",
+    "active_days": 183,
+    "total_days": 369,
+    "peak": 114,
+    "peak_date": "2026-09-29",
     "avg_per_active_day": 17,
     "weekdays": [
       {
@@ -89,15 +93,15 @@
       },
       {
         "day": "Tue",
-        "count": 623
+        "count": 643
       },
       {
         "day": "Wed",
-        "count": 490
+        "count": 565
       },
       {
         "day": "Thu",
-        "count": 353
+        "count": 371
       },
       {
         "day": "Fri",
@@ -110,14 +114,24 @@
     ]
   },
   "activity": {
-    "prs": 240,
-    "merged": 176,
+    "prs": 282,
+    "merged": 225,
     "issues": 15,
     "reviews": 0,
-    "commits": 3652,
+    "commits": 3812,
     "repos": 97
   },
   "owners": [
+    {
+      "login": "VNE-MedTech",
+      "name": "VNE Medical Technologies",
+      "repos": 24,
+      "private": 21,
+      "all_time": 1503,
+      "window": 1503,
+      "hours": 2254,
+      "hours_last_year": 2254
+    },
     {
       "login": "ladiate-ai",
       "name": "Ladiate",
@@ -127,16 +141,6 @@
       "window": 1405,
       "hours": 2194,
       "hours_last_year": 2108
-    },
-    {
-      "login": "VNE-MedTech",
-      "name": "VNE Medical Technologies",
-      "repos": 24,
-      "private": 21,
-      "all_time": 1343,
-      "window": 1343,
-      "hours": 2014,
-      "hours_last_year": 2014
     },
     {
       "login": "Claw-For-Humanity",
@@ -182,33 +186,33 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 1768,
-      "pct": 49.5
+      "commits": 1928,
+      "pct": 51.6
     },
     {
       "name": "JavaScript",
       "commits": 1066,
-      "pct": 29.8
+      "pct": 28.5
     },
     {
       "name": "Java",
       "commits": 291,
-      "pct": 8.1
+      "pct": 7.8
     },
     {
       "name": "TypeScript",
       "commits": 215,
-      "pct": 6.0
+      "pct": 5.8
     },
     {
       "name": "CSS",
       "commits": 100,
-      "pct": 2.8
+      "pct": 2.7
     },
     {
       "name": "Other",
       "commits": 135,
-      "pct": 3.8
+      "pct": 3.6
     }
   ],
   "public_repos_by_commits": [
