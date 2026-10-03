@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02",
+  "generated_at": "2026-10-03",
   "login": "erickdhdock",
   "name": "Eric Changbean Kang",
   "public_only": false,
@@ -15,10 +15,6 @@
     "peak": 343
   },
   "months": [
-    {
-      "month": "2025-09",
-      "count": 0
-    },
     {
       "month": "2025-10",
       "count": 88
@@ -73,12 +69,12 @@
     }
   ],
   "rhythm": {
-    "current_streak": 6,
-    "current_streak_start": "2026-09-27",
+    "current_streak": 0,
+    "current_streak_start": null,
     "longest_streak": 54,
     "longest_streak_start": "2026-06-29",
     "active_days": 184,
-    "total_days": 371,
+    "total_days": 365,
     "peak": 343,
     "peak_date": "2026-10-01",
     "avg_per_active_day": 19,
