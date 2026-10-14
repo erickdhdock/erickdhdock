@@ -1,11 +1,11 @@
 {
-  "generated_at": "2026-10-13",
+  "generated_at": "2026-10-14",
   "login": "erickdhdock",
   "name": "Eric Changbean Kang",
   "public_only": false,
   "totals": {
     "commits_all_time": 4177,
-    "commits_last_year": 3332,
+    "commits_last_year": 3293,
     "repos": 99,
     "repos_private": 76
   },
@@ -74,7 +74,7 @@
     "longest_streak": 54,
     "longest_streak_start": "2026-06-29",
     "active_days": 190,
-    "total_days": 368,
+    "total_days": 369,
     "peak": 357,
     "peak_date": "2026-10-01",
     "avg_per_active_day": 19,
@@ -134,9 +134,9 @@
       "repos": 35,
       "private": 33,
       "all_time": 1474,
-      "window": 1414,
+      "window": 1379,
       "hours": 2211,
-      "hours_last_year": 2121
+      "hours_last_year": 2068
     },
     {
       "login": "Claw-For-Humanity",
@@ -164,9 +164,9 @@
       "repos": 16,
       "private": 6,
       "all_time": 61,
-      "window": 34,
+      "window": 30,
       "hours": 92,
-      "hours_last_year": 51
+      "hours_last_year": 45
     },
     {
       "login": "AMUSELY",
