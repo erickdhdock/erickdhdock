@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="684" viewBox="0 0 880 684" role="img" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif">
 <title>Commit analytics for Eric Changbean Kang</title>
-<desc>4,452 commits authored all-time, 3,527 in the last 12 months, across 105 repositories (82 private) in 6 accounts. Top language Python at 52.3 percent.</desc>
+<desc>4,452 commits authored all-time, 3,526 in the last 12 months, across 105 repositories (82 private) in 6 accounts. Top language Python at 52.3 percent.</desc>
 <rect width="880" height="684" rx="8" fill="#ffffff"/>
 <text x="28" y="40" font-size="17" font-weight="600" fill="#0b0b0b">Commit analytics</text>
-<text x="852" y="40" font-size="11.5" text-anchor="end" fill="#898781">updated 2026-10-30</text>
+<text x="852" y="40" font-size="11.5" text-anchor="end" fill="#898781">updated 2026-10-31</text>
 <line x1="28" y1="58" x2="852" y2="58" stroke="#e1e0d9"/>
 <text x="28" y="108" font-size="31" font-weight="650" fill="#0b0b0b">4,452</text>
 <text x="28" y="128" font-size="11" fill="#898781">commits authored</text>
-<text x="193" y="108" font-size="31" font-weight="650" fill="#0b0b0b">3,527</text>
+<text x="193" y="108" font-size="31" font-weight="650" fill="#0b0b0b">3,526</text>
 <text x="193" y="128" font-size="11" fill="#898781">in the last 12 months</text>
 <text x="358" y="108" font-size="31" font-weight="650" fill="#0b0b0b">399</text>
 <text x="358" y="128" font-size="11" fill="#898781">pull requests opened</text>
@@ -87,45 +87,45 @@
 <text x="852" y="390" font-size="11.5" text-anchor="end" fill="#52514e" font-weight="600" style="font-variant-numeric:tabular-nums">3.3%</text>
 <line x1="28" y1="418" x2="852" y2="418" stroke="#e1e0d9"/>
 <text x="28" y="448" font-size="13" font-weight="600" fill="#52514e">Contribution rhythm</text>
-<text x="28" y="466" font-size="11" fill="#898781">contributions per month · Nov 2025 to Oct 2026 · private included</text>
+<text x="28" y="466" font-size="11" fill="#898781">contributions per month · Dec 2025 to Nov 2026 · private included</text>
 <text x="512" y="448" font-size="13" font-weight="600" fill="#52514e">Activity shape</text>
 <text x="512" y="466" font-size="11" fill="#898781">all-time totals, log scale</text>
-<rect x="28" y="540.5" width="28" height="27.5" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;27.5" dur="0.8s" begin="0.00s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="42" y="535.5" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">260</text>
-<text x="42" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Nov</text>
-<rect x="65" y="561.6" width="28" height="6.4" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;6.4" dur="0.8s" begin="0.05s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="79" y="556.6" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">60</text>
-<text x="79" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Dec</text>
-<rect x="102" y="548.5" width="28" height="19.5" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;19.5" dur="0.8s" begin="0.10s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="116" y="543.5" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">184</text>
-<text x="116" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Jan</text>
-<rect x="139" y="561.4" width="28" height="6.6" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;6.6" dur="0.8s" begin="0.15s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="153" y="556.4" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">62</text>
-<text x="153" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Feb</text>
-<rect x="176" y="560.5" width="28" height="7.5" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;7.5" dur="0.8s" begin="0.20s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="190" y="555.5" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">71</text>
-<text x="190" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Mar</text>
-<rect x="213" y="562.7" width="28" height="5.3" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;5.3" dur="0.8s" begin="0.25s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="227" y="557.7" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">50</text>
-<text x="227" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Apr</text>
-<rect x="250" y="548.4" width="28" height="19.6" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;19.6" dur="0.8s" begin="0.30s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="264" y="543.4" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">185</text>
-<text x="264" y="582" font-size="9.5" text-anchor="middle" fill="#898781">May</text>
-<rect x="287" y="543.4" width="28" height="24.6" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;24.6" dur="0.8s" begin="0.35s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="301" y="538.4" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">232</text>
-<text x="301" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Jun</text>
-<rect x="324" y="499.5" width="28" height="68.5" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;68.5" dur="0.8s" begin="0.40s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="338" y="494.5" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">646</text>
-<text x="338" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Jul</text>
-<rect x="361" y="492.0" width="28" height="76.0" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;76.0" dur="0.8s" begin="0.45s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="375" y="487.0" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">717</text>
-<text x="375" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Aug</text>
-<rect x="398" y="506.5" width="28" height="61.5" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;61.5" dur="0.8s" begin="0.50s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="412" y="501.5" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">580</text>
-<text x="412" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Sep</text>
-<rect x="435" y="488.0" width="28" height="80.0" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;80.0" dur="0.8s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="449" y="483.0" font-size="9.5" text-anchor="middle" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">755</text>
-<text x="449" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Oct</text>
+<rect x="28" y="561.6" width="28" height="6.4" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;6.4" dur="0.8s" begin="0.00s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="42" y="556.6" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">60</text>
+<text x="42" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Dec</text>
+<rect x="65" y="548.5" width="28" height="19.5" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;19.5" dur="0.8s" begin="0.05s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="79" y="543.5" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">184</text>
+<text x="79" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Jan</text>
+<rect x="102" y="561.4" width="28" height="6.6" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;6.6" dur="0.8s" begin="0.10s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="116" y="556.4" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">62</text>
+<text x="116" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Feb</text>
+<rect x="139" y="560.5" width="28" height="7.5" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;7.5" dur="0.8s" begin="0.15s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="153" y="555.5" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">71</text>
+<text x="153" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Mar</text>
+<rect x="176" y="562.7" width="28" height="5.3" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;5.3" dur="0.8s" begin="0.20s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="190" y="557.7" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">50</text>
+<text x="190" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Apr</text>
+<rect x="213" y="548.4" width="28" height="19.6" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;19.6" dur="0.8s" begin="0.25s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="227" y="543.4" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">185</text>
+<text x="227" y="582" font-size="9.5" text-anchor="middle" fill="#898781">May</text>
+<rect x="250" y="543.4" width="28" height="24.6" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;24.6" dur="0.8s" begin="0.30s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="264" y="538.4" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">232</text>
+<text x="264" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Jun</text>
+<rect x="287" y="499.5" width="28" height="68.5" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;68.5" dur="0.8s" begin="0.35s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="301" y="494.5" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">646</text>
+<text x="301" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Jul</text>
+<rect x="324" y="492.0" width="28" height="76.0" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;76.0" dur="0.8s" begin="0.40s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="338" y="487.0" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">717</text>
+<text x="338" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Aug</text>
+<rect x="361" y="506.5" width="28" height="61.5" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;61.5" dur="0.8s" begin="0.45s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="375" y="501.5" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">580</text>
+<text x="375" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Sep</text>
+<rect x="398" y="488.0" width="28" height="80.0" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;80.0" dur="0.8s" begin="0.50s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="412" y="483.0" font-size="9.5" text-anchor="middle" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">755</text>
+<text x="412" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Oct</text>
+<rect x="435" y="566.0" width="28" height="2.0" rx="3" fill="#2a78d6"><animate attributeName="height" values="2;2.0" dur="0.8s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="449" y="561.0" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">0</text>
+<text x="449" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Nov</text>
 <line x1="28" y1="568" x2="463" y2="568" stroke="#e1e0d9"/>
 <polygon points="682.0,505.8 699.3,518.4 692.7,538.7 671.3,538.7 664.7,518.4" fill="none" stroke="#e1e0d9" stroke-dasharray="2 3"/>
 <polygon points="682.0,488.9 715.4,513.2 702.6,552.4 661.4,552.4 648.6,513.2" fill="none" stroke="#e1e0d9" stroke-dasharray="2 3"/>
@@ -148,6 +148,6 @@
 <text x="596" y="496" font-size="10.5" text-anchor="end" fill="#898781">Issues</text>
 <text x="596" y="509" font-size="12" text-anchor="end" font-weight="600" fill="#0b0b0b" style="font-variant-numeric:tabular-nums">15</text>
 <line x1="28" y1="640" x2="852" y2="640" stroke="#e1e0d9"/>
-<text x="28" y="666" font-size="11.5" fill="#898781">3,802 contributions in the last year · 195 active days · peak 357 in a day</text>
+<text x="28" y="666" font-size="11.5" fill="#898781">3,802 contributions in the last year · 194 active days · peak 357 in a day</text>
 <text x="852" y="666" font-size="11.5" text-anchor="end" fill="#898781">private repos aggregated by account</text>
 </svg>
