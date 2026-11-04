@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-03",
+  "generated_at": "2026-11-04",
   "login": "erickdhdock",
   "name": "Eric Changbean Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 4475,
-    "commits_last_year": 3549,
+    "commits_all_time": 4616,
+    "commits_last_year": 3690,
     "repos": 105,
     "repos_private": 82
   },
   "calendar": {
-    "total": 3826,
-    "active_days": 197,
+    "total": 3970,
+    "active_days": 199,
     "peak": 357
   },
   "months": [
@@ -61,23 +61,23 @@
     },
     {
       "month": "2026-10",
-      "count": 755
+      "count": 808
     },
     {
       "month": "2026-11",
-      "count": 25
+      "count": 116
     }
   ],
   "rhythm": {
-    "current_streak": 3,
+    "current_streak": 5,
     "current_streak_start": "2026-11-01",
     "longest_streak": 54,
     "longest_streak_start": "2026-06-29",
-    "active_days": 197,
-    "total_days": 368,
+    "active_days": 199,
+    "total_days": 369,
     "peak": 357,
     "peak_date": "2026-10-01",
-    "avg_per_active_day": 19,
+    "avg_per_active_day": 20,
     "weekdays": [
       {
         "day": "Sun",
@@ -85,23 +85,23 @@
       },
       {
         "day": "Mon",
-        "count": 621
+        "count": 627
       },
       {
         "day": "Tue",
-        "count": 656
+        "count": 659
       },
       {
         "day": "Wed",
-        "count": 589
+        "count": 672
       },
       {
         "day": "Thu",
-        "count": 757
+        "count": 795
       },
       {
         "day": "Fri",
-        "count": 526
+        "count": 540
       },
       {
         "day": "Sat",
@@ -110,14 +110,24 @@
     ]
   },
   "activity": {
-    "prs": 401,
-    "merged": 320,
+    "prs": 404,
+    "merged": 323,
     "issues": 15,
     "reviews": 0,
-    "commits": 4475,
+    "commits": 4616,
     "repos": 105
   },
   "owners": [
+    {
+      "login": "ladiate-ai",
+      "name": "Ladiate",
+      "repos": 39,
+      "private": 37,
+      "all_time": 1904,
+      "window": 1767,
+      "hours": 2856,
+      "hours_last_year": 2650
+    },
     {
       "login": "VNE-MedTech",
       "name": "VNE Medical Technologies",
@@ -127,16 +137,6 @@
       "window": 1859,
       "hours": 2788,
       "hours_last_year": 2788
-    },
-    {
-      "login": "ladiate-ai",
-      "name": "Ladiate",
-      "repos": 39,
-      "private": 37,
-      "all_time": 1763,
-      "window": 1626,
-      "hours": 2644,
-      "hours_last_year": 2439
     },
     {
       "login": "Claw-For-Humanity",
@@ -182,33 +182,33 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 2288,
-      "pct": 52.1
+      "commits": 2303,
+      "pct": 50.9
     },
     {
       "name": "JavaScript",
-      "commits": 1170,
-      "pct": 26.6
+      "commits": 1227,
+      "pct": 27.1
     },
     {
       "name": "TypeScript",
-      "commits": 401,
-      "pct": 9.1
+      "commits": 463,
+      "pct": 10.2
     },
     {
       "name": "Java",
       "commits": 291,
-      "pct": 6.6
+      "pct": 6.4
     },
     {
       "name": "CSS",
       "commits": 100,
-      "pct": 2.3
+      "pct": 2.2
     },
     {
       "name": "Other",
       "commits": 144,
-      "pct": 3.3
+      "pct": 3.2
     }
   ],
   "public_repos_by_commits": [
