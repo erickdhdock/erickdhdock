@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="684" viewBox="0 0 880 684" role="img" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif">
 <title>Commit analytics for Eric Changbean Kang</title>
-<desc>4,616 commits authored all-time, 3,690 in the last 12 months, across 105 repositories (82 private) in 6 accounts. Top language Python at 50.9 percent.</desc>
+<desc>4,628 commits authored all-time, 3,702 in the last 12 months, across 105 repositories (82 private) in 6 accounts. Top language Python at 50.7 percent.</desc>
 <rect width="880" height="684" rx="8" fill="#0d1117"/>
 <text x="28" y="40" font-size="17" font-weight="600" fill="#ffffff">Commit analytics</text>
-<text x="852" y="40" font-size="11.5" text-anchor="end" fill="#898781">updated 2026-11-05</text>
+<text x="852" y="40" font-size="11.5" text-anchor="end" fill="#898781">updated 2026-11-06</text>
 <line x1="28" y1="58" x2="852" y2="58" stroke="#2c2c2a"/>
-<text x="28" y="108" font-size="31" font-weight="650" fill="#ffffff">4,616</text>
+<text x="28" y="108" font-size="31" font-weight="650" fill="#ffffff">4,628</text>
 <text x="28" y="128" font-size="11" fill="#898781">commits authored</text>
-<text x="193" y="108" font-size="31" font-weight="650" fill="#ffffff">3,690</text>
+<text x="193" y="108" font-size="31" font-weight="650" fill="#ffffff">3,702</text>
 <text x="193" y="128" font-size="11" fill="#898781">in the last 12 months</text>
 <text x="358" y="108" font-size="31" font-weight="650" fill="#ffffff">404</text>
 <text x="358" y="128" font-size="11" fill="#898781">pull requests opened</text>
@@ -24,26 +24,26 @@
 <text x="28" y="240" font-size="12" fill="#c3c2b7">Ladiate</text>
 <rect x="148" y="230" width="140" height="12" rx="4" fill="#1b2027"/>
 <g clip-path="url(#bars)"><rect x="144" y="230" width="144.0" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;144.0" dur="0.9s" begin="0.00s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
-<text x="340" y="240" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">2,856 h</text>
-<text x="470" y="240" font-size="11" text-anchor="end" fill="#898781">1,904 commits</text>
+<text x="340" y="240" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">2,874 h</text>
+<text x="470" y="240" font-size="11" text-anchor="end" fill="#898781">1,916 commits</text>
 <text x="28" y="270" font-size="12" fill="#c3c2b7">VNE-MedTech</text>
 <rect x="148" y="260" width="140" height="12" rx="4" fill="#1b2027"/>
-<g clip-path="url(#bars)"><rect x="144" y="260" width="140.7" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;140.7" dur="0.9s" begin="0.08s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<g clip-path="url(#bars)"><rect x="144" y="260" width="139.8" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;139.8" dur="0.9s" begin="0.08s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
 <text x="340" y="270" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">2,788 h</text>
 <text x="470" y="270" font-size="11" text-anchor="end" fill="#898781">1,859 commits</text>
 <text x="28" y="300" font-size="12" fill="#c3c2b7">Claw For Humanity</text>
 <rect x="148" y="290" width="140" height="12" rx="4" fill="#1b2027"/>
-<g clip-path="url(#bars)"><rect x="144" y="290" width="38.3" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;38.3" dur="0.9s" begin="0.16s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<g clip-path="url(#bars)"><rect x="144" y="290" width="38.1" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;38.1" dur="0.9s" begin="0.16s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
 <text x="340" y="300" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">700 h</text>
 <text x="470" y="300" font-size="11" text-anchor="end" fill="#898781">467 commits, dormant</text>
 <text x="28" y="330" font-size="12" fill="#c3c2b7">Garibaldi-Robotics</text>
 <rect x="148" y="320" width="140" height="12" rx="4" fill="#1b2027"/>
-<g clip-path="url(#bars)"><rect x="144" y="320" width="25.4" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;25.4" dur="0.9s" begin="0.24s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<g clip-path="url(#bars)"><rect x="144" y="320" width="25.3" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;25.3" dur="0.9s" begin="0.24s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
 <text x="340" y="330" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">436 h</text>
 <text x="470" y="330" font-size="11" text-anchor="end" fill="#898781">291 commits, dormant</text>
 <text x="28" y="360" font-size="12" fill="#c3c2b7">Personal</text>
 <rect x="148" y="350" width="140" height="12" rx="4" fill="#1b2027"/>
-<g clip-path="url(#bars)"><rect x="144" y="350" width="8.9" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;8.9" dur="0.9s" begin="0.32s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
+<g clip-path="url(#bars)"><rect x="144" y="350" width="8.8" height="12" rx="4" fill="#3987e5"><animate attributeName="width" values="4;8.8" dur="0.9s" begin="0.32s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></g>
 <text x="340" y="360" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">99 h</text>
 <text x="470" y="360" font-size="11" text-anchor="end" fill="#898781">66 commits</text>
 <text x="28" y="390" font-size="12" fill="#c3c2b7">Amusely Music</text>
@@ -54,9 +54,9 @@
 <clipPath id="stack"><rect x="512" y="232" width="340" height="22" rx="4"/></clipPath>
 <clipPath id="reveal"><rect x="512" y="232" width="340" height="22"><animate attributeName="width" values="0;340" dur="1.0s" begin="0.1s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect></clipPath>
 <g clip-path="url(#stack)"><g clip-path="url(#reveal)">
-<rect x="512.0" y="232" width="171.1" height="22" fill="#3987e5"/>
-<rect x="685.1" y="232" width="90.1" height="22" fill="#d95926"/>
-<rect x="777.2" y="232" width="32.7" height="22" fill="#199e70"/>
+<rect x="512.0" y="232" width="170.4" height="22" fill="#3987e5"/>
+<rect x="684.4" y="232" width="89.8" height="22" fill="#d95926"/>
+<rect x="776.2" y="232" width="33.7" height="22" fill="#199e70"/>
 <rect x="811.9" y="232" width="19.8" height="22" fill="#c98500"/>
 <rect x="833.6" y="232" width="5.5" height="22" fill="#d55181"/>
 <rect x="841.1" y="232" width="8.9" height="22" fill="#898781"/>
@@ -64,15 +64,15 @@
 <rect x="512" y="271" width="10" height="10" rx="2.5" fill="#3987e5"/>
 <text x="530" y="280" font-size="11.5" fill="#c3c2b7">Python</text>
 <text x="800" y="280" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">2,303</text>
-<text x="852" y="280" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">50.9%</text>
+<text x="852" y="280" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">50.7%</text>
 <rect x="512" y="293" width="10" height="10" rx="2.5" fill="#d95926"/>
 <text x="530" y="302" font-size="11.5" fill="#c3c2b7">JavaScript</text>
 <text x="800" y="302" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">1,227</text>
-<text x="852" y="302" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">27.1%</text>
+<text x="852" y="302" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">27.0%</text>
 <rect x="512" y="315" width="10" height="10" rx="2.5" fill="#199e70"/>
 <text x="530" y="324" font-size="11.5" fill="#c3c2b7">TypeScript</text>
-<text x="800" y="324" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">463</text>
-<text x="852" y="324" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">10.2%</text>
+<text x="800" y="324" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">475</text>
+<text x="852" y="324" font-size="11.5" text-anchor="end" fill="#c3c2b7" font-weight="600" style="font-variant-numeric:tabular-nums">10.5%</text>
 <rect x="512" y="337" width="10" height="10" rx="2.5" fill="#c98500"/>
 <text x="530" y="346" font-size="11.5" fill="#c3c2b7">Java</text>
 <text x="800" y="346" font-size="11.5" text-anchor="end" fill="#898781" style="font-variant-numeric:tabular-nums">291</text>
@@ -123,8 +123,8 @@
 <rect x="398" y="488.0" width="28" height="80.0" rx="3" fill="#3987e5"><animate attributeName="height" values="2;80.0" dur="0.8s" begin="0.50s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
 <text x="412" y="483.0" font-size="9.5" text-anchor="middle" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">808</text>
 <text x="412" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Oct</text>
-<rect x="435" y="556.5" width="28" height="11.5" rx="3" fill="#3987e5"><animate attributeName="height" values="2;11.5" dur="0.8s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
-<text x="449" y="551.5" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">116</text>
+<rect x="435" y="555.3" width="28" height="12.7" rx="3" fill="#3987e5"><animate attributeName="height" values="2;12.7" dur="0.8s" begin="0.55s" fill="freeze" calcMode="spline" keyTimes="0;1" keySplines="0.22 0.9 0.3 1"/></rect>
+<text x="449" y="550.3" font-size="9.5" text-anchor="middle" font-weight="400" fill="#898781" style="font-variant-numeric:tabular-nums">128</text>
 <text x="449" y="582" font-size="9.5" text-anchor="middle" fill="#898781">Nov</text>
 <line x1="28" y1="568" x2="463" y2="568" stroke="#2c2c2a"/>
 <polygon points="682.0,505.8 699.3,518.4 692.7,538.7 671.3,538.7 664.7,518.4" fill="none" stroke="#2c2c2a" stroke-dasharray="2 3"/>
@@ -138,7 +138,7 @@
 <line x1="682" y1="524" x2="615.4" y2="502.4" stroke="#2c2c2a"/>
 <polygon points="682.0,459.9 725.4,509.9 707.8,559.5 661.2,552.7 662.0,517.5" fill="#3987e5" fill-opacity="0.22" stroke="#3987e5" stroke-width="2" stroke-linejoin="round"/>
 <text x="682" y="430" font-size="10.5" text-anchor="middle" fill="#898781">Commits</text>
-<text x="682" y="443" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">4,616</text>
+<text x="682" y="443" font-size="12" text-anchor="middle" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">4,628</text>
 <text x="768" y="496" font-size="10.5" text-anchor="start" fill="#898781">Pull requests</text>
 <text x="768" y="509" font-size="12" text-anchor="start" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">404</text>
 <text x="735" y="607" font-size="10.5" text-anchor="start" fill="#898781">Merged</text>
@@ -148,6 +148,6 @@
 <text x="596" y="496" font-size="10.5" text-anchor="end" fill="#898781">Issues</text>
 <text x="596" y="509" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">15</text>
 <line x1="28" y1="640" x2="852" y2="640" stroke="#2c2c2a"/>
-<text x="28" y="666" font-size="11.5" fill="#898781">3,970 contributions in the last year · 199 active days · peak 357 in a day</text>
+<text x="28" y="666" font-size="11.5" fill="#898781">3,982 contributions in the last year · 201 active days · peak 357 in a day</text>
 <text x="852" y="666" font-size="11.5" text-anchor="end" fill="#898781">private repos aggregated by account</text>
 </svg>
