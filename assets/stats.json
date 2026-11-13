@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-11-12",
+  "generated_at": "2026-11-13",
   "login": "erickdhdock",
   "name": "Eric Changbean Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 4685,
-    "commits_last_year": 3759,
+    "commits_all_time": 6006,
+    "commits_last_year": 5080,
     "repos": 105,
     "repos_private": 82
   },
   "calendar": {
-    "total": 4046,
-    "active_days": 204,
-    "peak": 357
+    "total": 5373,
+    "active_days": 206,
+    "peak": 728
   },
   "months": [
     {
@@ -65,19 +65,19 @@
     },
     {
       "month": "2026-11",
-      "count": 192
+      "count": 1519
     }
   ],
   "rhythm": {
-    "current_streak": 3,
+    "current_streak": 5,
     "current_streak_start": "2026-11-10",
     "longest_streak": 54,
     "longest_streak_start": "2026-06-29",
-    "active_days": 204,
-    "total_days": 370,
-    "peak": 357,
-    "peak_date": "2026-10-01",
-    "avg_per_active_day": 20,
+    "active_days": 206,
+    "total_days": 371,
+    "peak": 728,
+    "peak_date": "2026-11-13",
+    "avg_per_active_day": 26,
     "weekdays": [
       {
         "day": "Sun",
@@ -93,28 +93,28 @@
       },
       {
         "day": "Wed",
-        "count": 721
+        "count": 915
       },
       {
         "day": "Thu",
-        "count": 806
+        "count": 1208
       },
       {
         "day": "Fri",
-        "count": 550
+        "count": 1278
       },
       {
         "day": "Sat",
-        "count": 280
+        "count": 283
       }
     ]
   },
   "activity": {
-    "prs": 411,
-    "merged": 329,
+    "prs": 417,
+    "merged": 336,
     "issues": 15,
     "reviews": 0,
-    "commits": 4685,
+    "commits": 6006,
     "repos": 105
   },
   "owners": [
@@ -123,10 +123,10 @@
       "name": "Ladiate",
       "repos": 39,
       "private": 37,
-      "all_time": 1973,
-      "window": 1836,
-      "hours": 2960,
-      "hours_last_year": 2754
+      "all_time": 3294,
+      "window": 3157,
+      "hours": 4941,
+      "hours_last_year": 4736
     },
     {
       "login": "VNE-MedTech",
@@ -182,33 +182,33 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 2305,
-      "pct": 50.2
+      "commits": 2939,
+      "pct": 51.7
     },
     {
       "name": "JavaScript",
-      "commits": 1243,
-      "pct": 27.1
+      "commits": 1707,
+      "pct": 30.0
     },
     {
       "name": "TypeScript",
       "commits": 509,
-      "pct": 11.1
+      "pct": 8.9
     },
     {
       "name": "Java",
       "commits": 291,
-      "pct": 6.3
+      "pct": 5.1
     },
     {
       "name": "CSS",
       "commits": 100,
-      "pct": 2.2
+      "pct": 1.8
     },
     {
       "name": "Other",
       "commits": 144,
-      "pct": 3.1
+      "pct": 2.5
     }
   ],
   "public_repos_by_commits": [
