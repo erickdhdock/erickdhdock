@@ -4,14 +4,14 @@
   "name": "Eric Changbean Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 6772,
-    "commits_last_year": 5812,
+    "commits_all_time": 6776,
+    "commits_last_year": 5806,
     "repos": 105,
     "repos_private": 82
   },
   "calendar": {
-    "total": 6161,
-    "active_days": 208,
+    "total": 6169,
+    "active_days": 209,
     "peak": 902
   },
   "months": [
@@ -65,16 +65,16 @@
     },
     {
       "month": "2026-11",
-      "count": 2307
+      "count": 2315
     }
   ],
   "rhythm": {
-    "current_streak": 0,
-    "current_streak_start": null,
+    "current_streak": 1,
+    "current_streak_start": "2026-11-20",
     "longest_streak": 54,
     "longest_streak_start": "2026-06-29",
-    "active_days": 208,
-    "total_days": 370,
+    "active_days": 209,
+    "total_days": 371,
     "peak": 902,
     "peak_date": "2026-11-13",
     "avg_per_active_day": 30,
@@ -101,7 +101,7 @@
       },
       {
         "day": "Fri",
-        "count": 1452
+        "count": 1460
       },
       {
         "day": "Sat",
@@ -110,11 +110,11 @@
     ]
   },
   "activity": {
-    "prs": 439,
-    "merged": 357,
+    "prs": 443,
+    "merged": 361,
     "issues": 15,
     "reviews": 0,
-    "commits": 6772,
+    "commits": 6776,
     "repos": 105
   },
   "owners": [
@@ -123,10 +123,10 @@
       "name": "Ladiate",
       "repos": 39,
       "private": 37,
-      "all_time": 4060,
-      "window": 3889,
-      "hours": 6090,
-      "hours_last_year": 5834
+      "all_time": 4064,
+      "window": 3883,
+      "hours": 6096,
+      "hours_last_year": 5824
     },
     {
       "login": "VNE-MedTech",
@@ -183,12 +183,12 @@
     {
       "name": "Python",
       "commits": 3183,
-      "pct": 50.1
+      "pct": 50.0
     },
     {
       "name": "JavaScript",
-      "commits": 2132,
-      "pct": 33.5
+      "commits": 2136,
+      "pct": 33.6
     },
     {
       "name": "TypeScript",
