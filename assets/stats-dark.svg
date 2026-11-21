@@ -1,13 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="684" viewBox="0 0 880 684" role="img" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif">
 <title>Commit analytics for Eric Changbean Kang</title>
-<desc>6,776 commits authored all-time, 5,806 in the last 12 months, across 105 repositories (82 private) in 6 accounts. Top language Python at 50.0 percent.</desc>
+<desc>6,776 commits authored all-time, 5,786 in the last 12 months, across 105 repositories (82 private) in 6 accounts. Top language Python at 50.0 percent.</desc>
 <rect width="880" height="684" rx="8" fill="#0d1117"/>
 <text x="28" y="40" font-size="17" font-weight="600" fill="#ffffff">Commit analytics</text>
-<text x="852" y="40" font-size="11.5" text-anchor="end" fill="#898781">updated 2026-11-20</text>
+<text x="852" y="40" font-size="11.5" text-anchor="end" fill="#898781">updated 2026-11-21</text>
 <line x1="28" y1="58" x2="852" y2="58" stroke="#2c2c2a"/>
 <text x="28" y="108" font-size="31" font-weight="650" fill="#ffffff">6,776</text>
 <text x="28" y="128" font-size="11" fill="#898781">commits authored</text>
-<text x="193" y="108" font-size="31" font-weight="650" fill="#ffffff">5,806</text>
+<text x="193" y="108" font-size="31" font-weight="650" fill="#ffffff">5,786</text>
 <text x="193" y="128" font-size="11" fill="#898781">in the last 12 months</text>
 <text x="358" y="108" font-size="31" font-weight="650" fill="#ffffff">443</text>
 <text x="358" y="128" font-size="11" fill="#898781">pull requests opened</text>
@@ -148,6 +148,6 @@
 <text x="596" y="496" font-size="10.5" text-anchor="end" fill="#898781">Issues</text>
 <text x="596" y="509" font-size="12" text-anchor="end" font-weight="600" fill="#ffffff" style="font-variant-numeric:tabular-nums">15</text>
 <line x1="28" y1="640" x2="852" y2="640" stroke="#2c2c2a"/>
-<text x="28" y="666" font-size="11.5" fill="#898781">6,169 contributions in the last year · 209 active days · peak 902 in a day</text>
+<text x="28" y="666" font-size="11.5" fill="#898781">6,169 contributions in the last year · 203 active days · peak 902 in a day</text>
 <text x="852" y="666" font-size="11.5" text-anchor="end" fill="#898781">private repos aggregated by account</text>
 </svg>
