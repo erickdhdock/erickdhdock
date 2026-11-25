@@ -1,17 +1,17 @@
 {
-  "generated_at": "2026-11-24",
+  "generated_at": "2026-11-25",
   "login": "erickdhdock",
   "name": "Eric Changbean Kang",
   "public_only": false,
   "totals": {
-    "commits_all_time": 6924,
-    "commits_last_year": 5933,
+    "commits_all_time": 7029,
+    "commits_last_year": 6032,
     "repos": 109,
     "repos_private": 86
   },
   "calendar": {
-    "total": 6229,
-    "active_days": 205,
+    "total": 6334,
+    "active_days": 206,
     "peak": 902
   },
   "months": [
@@ -65,19 +65,19 @@
     },
     {
       "month": "2026-11",
-      "count": 2466
+      "count": 2571
     }
   ],
   "rhythm": {
-    "current_streak": 2,
+    "current_streak": 3,
     "current_streak_start": "2026-11-23",
     "longest_streak": 54,
     "longest_streak_start": "2026-06-29",
-    "active_days": 205,
-    "total_days": 367,
+    "active_days": 206,
+    "total_days": 368,
     "peak": 902,
     "peak_date": "2026-11-13",
-    "avg_per_active_day": 30,
+    "avg_per_active_day": 31,
     "weekdays": [
       {
         "day": "Sun",
@@ -89,11 +89,11 @@
       },
       {
         "day": "Tue",
-        "count": 767
+        "count": 859
       },
       {
         "day": "Wed",
-        "count": 965
+        "count": 978
       },
       {
         "day": "Thu",
@@ -114,7 +114,7 @@
     "merged": 361,
     "issues": 15,
     "reviews": 0,
-    "commits": 6924,
+    "commits": 7029,
     "repos": 109
   },
   "owners": [
@@ -124,9 +124,9 @@
       "repos": 39,
       "private": 37,
       "all_time": 4064,
-      "window": 3862,
+      "window": 3856,
       "hours": 6096,
-      "hours_last_year": 5793
+      "hours_last_year": 5784
     },
     {
       "login": "VNE-MedTech",
@@ -149,6 +149,16 @@
       "hours_last_year": 0
     },
     {
+      "login": "erickdhdock",
+      "name": "Personal",
+      "repos": 20,
+      "private": 10,
+      "all_time": 319,
+      "window": 288,
+      "hours": 478,
+      "hours_last_year": 432
+    },
+    {
       "login": "Garibaldi-Robotics",
       "name": "Garibaldi-Robotics",
       "repos": 2,
@@ -157,16 +167,6 @@
       "window": 0,
       "hours": 436,
       "hours_last_year": 0
-    },
-    {
-      "login": "erickdhdock",
-      "name": "Personal",
-      "repos": 20,
-      "private": 10,
-      "all_time": 214,
-      "window": 183,
-      "hours": 321,
-      "hours_last_year": 274
     },
     {
       "login": "AMUSELY",
@@ -182,23 +182,23 @@
   "languages": [
     {
       "name": "Python",
-      "commits": 3236,
-      "pct": 49.7
+      "commits": 3276,
+      "pct": 49.5
     },
     {
       "name": "JavaScript",
       "commits": 2136,
-      "pct": 32.8
+      "pct": 32.3
     },
     {
       "name": "TypeScript",
-      "commits": 558,
-      "pct": 8.6
+      "commits": 591,
+      "pct": 8.9
     },
     {
       "name": "Java",
       "commits": 291,
-      "pct": 4.5
+      "pct": 4.4
     },
     {
       "name": "CSS",
@@ -207,8 +207,8 @@
     },
     {
       "name": "Other",
-      "commits": 189,
-      "pct": 2.9
+      "commits": 221,
+      "pct": 3.3
     }
   ],
   "public_repos_by_commits": [
